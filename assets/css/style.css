@@ -19,14 +19,33 @@ body{
 #grid-container-404 {
     display: grid;
     grid-template-columns: 5vw 1fr 3vw 1fr 5vw;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 1fr 1fr 1fr;
+    row-gap: 10px;
     grid-template-areas:
-    ". header-text header-text header-text ."
+    "header-text header-text header-text header-text header-text"
     ". moo-text . moo-img ."
     ". footer footer footer .";
 }
 
+.grid-section-background {
+    background-color: #f1ffc4;
+    border-radius: 2vh;
+    height: 200px;
+    width: 80%;
+    margin: 25% 20%;
+}
 /* header */
+
+#header-text {
+    grid-area: header-text;
+    background-color: #f1ffc4;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+header h1{
+    font-size: 400%;
+}
 
 /* moo img */
 
@@ -47,5 +66,9 @@ body{
 
 #moo-text {
     grid-area: moo-text;
+    text-align: center;
 }
+
+#moo-text div
+
 /* footer */
