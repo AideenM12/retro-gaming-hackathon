@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 /* Globals */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+#main-menu,
+#modal1{
+    background-color: #c6e2e9;
+    color: #000814;
+    font-family: 'MedievalSharp', sans-serif;
+}
+.modal.modal-fixed-footer .modal-footer{
+    text-align: center;
+    background-color: #f1ffc4;
+}
+#Zomb-dude-bro{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
 }
