@@ -8,12 +8,6 @@
 	box-sizing: border-box;
 }
 
-
-/*------------Main Menu Page CSS-----------*/
-
-body {
-	min-height: 100vh;
-}
 /* 404 page */
 
 #error-body {
@@ -126,6 +120,14 @@ text-align: center;
 letter-spacing: 5px;
 border-top: 7px solid #dab894;
 height: 10%;
+}
+
+/*-------End of 404 Page CSS----------*/
+
+/*------------Main Menu Page CSS-----------*/
+
+body {
+	min-height: 100vh;
 }
 
 .shadow{
@@ -346,3 +348,5 @@ header h1 {
   font-size: 1.3em;
   background-color: #dab894;
 }
+
+/*---------------End of Credits Page CSS-----------*/

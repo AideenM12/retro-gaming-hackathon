@@ -103,6 +103,14 @@ The main menu consists of a series of modals.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
 
+
+
+#### Credits page
+* The Credits page showcases all the collaborators who worked together to make this project. Links to each individual collaborator's github page can be found on this page alongside a link to the main menu page. A link to the site repository can also be found on this page, many thanks to Andy for taking the time to work with [Materializecss](https://materializecss.com/) for the first time to create this page. 
+
+
+<img src="assets/doc-images/creditspage.png" width="450" height="250" alt="credits-page">
+
  
 
 ### Existing Features
