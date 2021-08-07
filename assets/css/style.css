@@ -29,11 +29,16 @@ nav{
 #main-menu,
 #modal1,
 #modal2,
-#modal3{
+#modal3,
+#modal4{
     background-color: #c6e2e9;
     color: #000814;
     font-family: 'MedievalSharp', sans-serif;
     font-weight: 600;
+}
+#modal1{
+    height: 400px !important;
+    width: 400px !important;
 }
 
 #modal3{
@@ -41,6 +46,19 @@ nav{
     width: 400px !important;
 }
 
+#modal4{
+    height: 200px !important;
+    width: 400px !important;
+}
+.modal-4{
+    height: 76px !important;
+    padding-top: 20px !important;
+}
+
+.btn-4{
+    height: 40px !important;
+    width: 80px !important;
+}
 .modal{
     animation: bounceInDown !important; 
     animation-duration: 1s !important; 
@@ -66,10 +84,14 @@ nav{
     margin: 6px 10px !important;
 
 }
+.modal-footer > a:hover{
+    background-color: #fbfbfb;
+    color: #000814;
+}
 
 /*--Images--*/
 #Zomb-dude-bro{
-    margin: 30px;
+    margin: 90px 30px 0px 30px;
     width: 100px;
     height: 100px;
 }
@@ -77,6 +99,14 @@ nav{
 #Wizard-dude{
     width: 100px;
     height: 100px;
+}
+
+#wiz-img2{
+    margin-top: 50px;
+}
+#wiz-img3{
+    margin-top: 80px !important;
+    padding-bottom: 0;
 }
 
 /*--Lists--*/
@@ -103,24 +133,34 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: 0 !important;
     background-color: #dab894 !important;
     text-align: left;
-    max-height: 100px;
+    max-height: 60px;
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 i,
 footer,
+.foot-logo,
 .brand-logo,
 nav ul a{
     color: #000814 !important;
     text-shadow: #fbfbfb 2px 2px;
+    font-weight: 600 !important;
+}
+
+.foot-logo{
+    padding-top: 10px;
 }
 
 i{
     font-weight: 600;
     font-size: 2rem;
+}
+i:hover,
+nav ul a:hover{
+    color: #fbfbfb !important;
+    text-shadow: #000814 2px 2px;
 }
 /*---------------------End of Main Menu CSS--------------------*/

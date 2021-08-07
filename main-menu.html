@@ -23,7 +23,7 @@
         <a href="#" class="brand-logo">Needs More Cowbell</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#modal2" class="modal-trigger">How to Play</a></li>
-          <li><a href="#modal3">Select Difficulty</a></li>
+          <li><a href="#modal3" class="modal-trigger">Select Difficulty</a></li>
         </ul>
       </div>
     </nav>
@@ -36,7 +36,7 @@
     <div class="modal-content center ">
       <h4 class="shadow">Welcome to Needs More Cowbell!</h4>
       <p>Think you can finish our awesome retro game? Well you probably can.</p>
-      <img src="assets/tileset/frames/zombie_run_anim_f0.png" id="Zomb-dude-bro" alt="Zomb-dude-bro">
+      <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Zomb-dude-bro" alt="Zomb-dude-bro">
     </div>
     <div class="modal-footer center">
       <a href="#modal2" class="modal-close waves-effect waves-green btn-flat center modal-trigger ">How To Play</a>
@@ -55,7 +55,7 @@
         <li>4. You've probably won so go and play again!</li><br>
         <li>5. Get more cowbell!</li>
       </ul>
-      <div class="row">
+      <div class="row" id="wiz-img2">
       <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
       </div>
     </div>
@@ -68,22 +68,35 @@
   <div id="modal3" class="modal modal-fixed-footer">
     <div class="modal-content center">
      <h4 class="shadow">Select Difficulty</h4>       
-      <div class="row">
+      <div class="row" id="wiz-img3">
       <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
       </div>
     </div>
     
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Easy</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Medium</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Hard</a>
+      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Easy</a>
+      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Medium</a>
+      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Hard</a>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal modal-fixed-footer">
+    <div class="modal-content center">
+     <h4 class="shadow">Select Character</h4>       
+      
+    </div>
+    
+    <div class="modal-footer modal-4">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_f_idle_anim_f0.png" width="28" height="35"></a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" width="28" height="35"></a>
+      
     </div>
   </div>
 
   <footer class = "page-footer  ">
     <div class="row">
        <div class="col s6 left">
-          <h4>Needs More Cowbell</h4>
+          <p class="foot-logo">Needs More Cowbell</p>
        </div>
        <div class="col s6 right">
           <ul class="list-inline right">
