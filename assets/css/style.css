@@ -44,7 +44,7 @@
 
 /* header */
 
-#header-text {
+#header-text-error {
     grid-area: header-text;
     background-color: #f1ffc4;
     text-align: center;
@@ -53,11 +53,11 @@
     border-bottom: 7px solid #dab894;
 }
 
-header h1{
+#header-text-error header h1{
     font-size: 600%;
 }
 
-.header-img {
+.header-img-error {
     height: 60px;
     width: auto;
 }
@@ -113,7 +113,7 @@ header h1{
 
 /* footer */
 
-#footer {
+#footer-error {
 grid-area: footer;
 background-color: #f1ffc4;
 text-align: center;
