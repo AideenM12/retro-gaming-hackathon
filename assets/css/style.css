@@ -19,12 +19,12 @@ body{
 #grid-container-404 {
     display: grid;
     grid-template-columns: 5vw 1fr 3vw 1fr 5vw;
-    grid-template-rows: 5% 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     row-gap: 10px;
     grid-template-areas:
     "header-text header-text header-text header-text header-text"
     ". moo-text . moo-img ."
-    ". footer footer footer .";
+    "footer footer footer footer footer";
 }
 
 .grid-section-background {
@@ -34,6 +34,13 @@ body{
     width: 80%;
     margin: 25% 20%;
 }
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
 /* header */
 
 #header-text {
@@ -41,6 +48,7 @@ body{
     background-color: #f1ffc4;
     text-align: center;
     letter-spacing: 5px;
+    height: 100%;
 }
 
 header h1{
@@ -60,6 +68,7 @@ header h1{
     height: auto;
     width: 100%;
     border-radius: 50%;
+    border: 7px solid #dab894;
 }
 
 /* moo text */
@@ -69,6 +78,13 @@ header h1{
     text-align: center;
 }
 
-#moo-text div
+#moo-text div {}
 
 /* footer */
+
+#footer {
+grid-area: footer;
+background-color: #f1ffc4;
+text-align: center;
+letter-spacing: 5px;
+}
