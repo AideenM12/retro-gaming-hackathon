@@ -85,7 +85,19 @@ The website is divided into four separate pages. A home page, a tours page, a me
 
 The home page gives a general overview of the content offered by the site. 
 
+#### Main Menu
+The main menu consists of a series of modals.
+* The first modal is triggered when the user lands on the page. It provides the user with the option of viewing the game instructions or beginning the game immediately.
 
+<img src="assets/doc-images/modal1.png" width="450" height="250" alt="modal1">
+
+* The second modal is triggered when the user selects the "How to Play" button. This modal provides the user with a series of instructions on how to play the game. The user can then select the "Start Game" button.
+
+<img src="assets/doc-images/modal2.png" width="450" height="250" alt="modal2">
+
+* The third modal is triggered when the user selects the "Start Game" button. This modal allows the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard.
+
+<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
  
 
@@ -133,7 +145,7 @@ The imagery used was primarily found on [unsplash](https://unsplash.com). These 
 
 * The wireframe mockup links can be found below:
 
-* [Desktop Wireframes]()
+* [Main-Menu Wireframes](assets/wireframes/main-menu.pdf)
 
 
 ## Technologies Used
@@ -142,11 +154,10 @@ The imagery used was primarily found on [unsplash](https://unsplash.com). These 
     - This project was built using Gitpod as the IDE.
 - [Google fonts](https://fonts.google.com/) 
     - The font styles used on this website were chosen from Google fonts.
-- [Bootstrap 4.5](https://getbootstrap.com/)
-   - Various aspects of this website were structured using Bootstrap.
-   - Bootstrap was used to make this website responsive
-- [TinyJPG](https://tinyjpg.com/)
-   - The images represented were compressed using TinyJPG in order to improve the performance of the project. 
+- [Materializecss](https://materializecss.com/)
+   - Various aspects of this website were structured using Materialize.
+- [Animate.css](https://animate.style/)
+    - Buttons, images and popups were animated using Animate.css.
 - [Fontawesome](https://fontawesome.com/)
     - The icons used on this page were found in Fontawesome.
 - [Hover.css](https://ianlunn.github.io/Hover/) 

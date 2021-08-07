@@ -121,3 +121,72 @@ letter-spacing: 5px;
 border-top: 7px solid #dab894;
 height: 10%;
 }
+
+.shadow{
+    text-shadow: #dab894 2px 2px;
+}
+#main-menu,
+#modal1,
+#modal2,
+#modal3{
+    background-color: #c6e2e9;
+    color: #000814;
+    font-family: 'MedievalSharp', sans-serif;
+    font-weight: 600;
+}
+#modal3{
+    height: 300px !important;
+    width: 400px !important;
+}
+
+.modal{
+    animation: bounceInDown !important; 
+    animation-duration: 1s !important; /* don't forget to set a duration! */
+    
+}
+
+.modal.modal-fixed-footer .modal-footer{
+    text-align: center;
+    background-color: #f1ffc4;
+}
+.modal.modal-fixed-footer .modal-content{
+    overflow-y: hidden !important;
+}
+
+ .modal-footer > a{
+    animation: pulse !important;
+    animation-delay: 1s !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: calc(1s * 2) !important;
+    background-color: #dab894;
+    border: #000814 solid 1px;
+    margin: 6px 10px !important;
+
+}
+#Zomb-dude-bro{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#Wizard-dude{
+    width: 100px;
+    height: 100px;
+}
+
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+	padding-top: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+    display: inline;
+}
+
+.list-inline>li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+    margin-top: 1rem;
+}
