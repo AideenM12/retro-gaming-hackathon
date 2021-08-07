@@ -85,6 +85,8 @@ The website is divided into four separate pages. A home page, a tours page, a me
 
 The home page gives a general overview of the content offered by the site. 
 
+#### Main Menu
+
 
 
  
@@ -133,7 +135,7 @@ The imagery used was primarily found on [unsplash](https://unsplash.com). These 
 
 * The wireframe mockup links can be found below:
 
-* [Desktop Wireframes]()
+* [Main-Menu Wireframes](assets/wireframes/main-menu.pdf)
 
 
 ## Technologies Used
