@@ -7,12 +7,13 @@
     box-sizing: border-box;
 }
 
-body{
+
+/* 404 page */
+
+#error-body {
     background-color: #c6e2e9;
     font-family: MedievalSharp;
 }
-
-/* 404 page */
 
 /* grid */
 
@@ -49,10 +50,16 @@ body{
     text-align: center;
     letter-spacing: 5px;
     height: 100%;
+    border-bottom: 7px solid #dab894;
 }
 
 header h1{
-    font-size: 400%;
+    font-size: 600%;
+}
+
+.header-img {
+    height: 60px;
+    width: auto;
 }
 
 /* moo img */
@@ -62,6 +69,7 @@ header h1{
     height: auto;
     width: 100%;
     border-radius: 50%;
+    margin-top: 7%;
 }
 
 #moo-img img {
@@ -76,9 +84,32 @@ header h1{
 #moo-text {
     grid-area: moo-text;
     text-align: center;
+    letter-spacing: 3px;
 }
 
-#moo-text div {}
+#moo-text h2 {
+    font-size: 300%;
+}
+
+#moo-text p {
+    margin: 20px;
+    font-weight: 800;
+}
+
+#moo-text div {
+    border: 7px solid #dab894;
+    height: fit-content;
+}
+
+/* moo text nav */
+
+#moo-text div p a {
+    text-decoration: none;
+}
+
+#moo-text div p a:hover {
+    text-decoration: underline;
+}
 
 /* footer */
 
@@ -87,4 +118,6 @@ grid-area: footer;
 background-color: #f1ffc4;
 text-align: center;
 letter-spacing: 5px;
+border-top: 7px solid #dab894;
+height: 10%;
 }
