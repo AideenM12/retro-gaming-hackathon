@@ -25,8 +25,8 @@ function preload () {
         'player',
         'assets/tileset/frames/playerSprite/wiz-m-spritesheet.png',
         {
-            frameWidth: 32,
-            frameHeight: 48
+            frameWidth: 15,
+            frameHeight: 21
         }
     )
 };
@@ -45,6 +45,17 @@ function create () {
     player.setCollideWorldBounds(true);
 
     this.anims.create({
+        key: 'left',
+        frames: this.anims.generateFrameNumbers(
+            'player', {
+                start: 4,
+                end: 7
+            }
+        ),
+        frameRate: 5,
+        repeat: -1
+    })
+    this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers(
             'player', {
@@ -52,7 +63,7 @@ function create () {
                 end: 3
             }
         ),
-        frameRate: 10,
+        frameRate: 5,
         repeat: -1
     })
 
@@ -60,5 +71,19 @@ function create () {
 };
 
 function update () {
+    cursors = this.input.keyboard.createCursorKeys();
 
+    if (cursors.left.isDown) {
+        player.setVelocityX(-100);
+        player.anims.play('left', true)
+    } else if (cursors.right.isDown) {
+        player.setVelocityX(100);
+        player.anims.play('right', true)
+    } else {
+        player.setVelocityX(0);
+    }
+
+    if (cursors.up.isDown && player.body.touching.down) {
+        player.setVelocityY(-300);
+    }
 };
