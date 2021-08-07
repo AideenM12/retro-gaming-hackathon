@@ -18,17 +18,22 @@ let config = {
 
 let game = new Phaser.Game(config);
 
-let playerSprite = 'assets/tileset/frames/playerSprite/wiz-m-spritesheet.png';
+let playerSprite = 'assets/tileset/frames/playerSprite/wiz-f-spritesheet.png';
 
 function preload () {
     this.load.image('floor', 'assets/tileset/frames/environment/floor/floor-group.png');
     this.load.image('single-floor', 'assets/tileset/frames/environment/floor/floor_5.png');
     this.load.image('door', 'assets/tileset/frames/environment/door/doors_leaf_closed.png');
+    this.load.image('exit-door', 'assets/tileset/frames/environment/door/doors_all.png');
     this.load.image('crate', 'assets/tileset/frames/environment/objects/crate.png');
     this.load.image('skull', 'assets/tileset/frames/enemies/skull.png');
     this.load.image('blue-Flask-Big', 'assets/tileset/frames/environment/objects/flask_big_blue.png');
+    this.load.image('column', 'assets/tileset/frames/environment/column/wall_column_mid.png');
+    this.load.image('column-flipped', 'assets/tileset/frames/environment/column/wall_column_mid-flipped.png');
+    this.load.image('column-red-banner', 'assets/tileset/frames/environment/wall/wall_banner_red.png');
+    this.load.image('column-red-banner-flipped', 'assets/tileset/frames/environment/wall/wall_banner_red-flipped.png');
 
-    this.load.audio('door-close', 'assets/audio/door-creek-slam.wav');
+    this.load.audio('door-close', 'assets/audio/door-creek-slam-egg.wav');
 
     this.load.spritesheet(
         'player',
@@ -52,6 +57,14 @@ function create () {
     // static scene objects doors/skulls/ladders etc
     door = this.add.image(50, (window.innerHeight * 0.65), 'door').setScale(3).setOrigin(0, 0);
     doorCloseAudio = this.sound.play('door-close');
+
+    column1 = this.add.image(((window.innerWidth / 2) - 240), (window.innerHeight * 0.16), 'column').setScale(3).setOrigin(0, 0);
+    columnRedBanner = this.add.image(((window.innerWidth / 2) - 240), ((window.innerHeight * 0.10) + 10), 'column-red-banner').setScale(3).setOrigin(0, 0);
+    column2 = this.add.image(((window.innerWidth / 2) - 10), (window.innerHeight * 0.16), 'column-flipped').setScale(3).setOrigin(0, 0);
+    columnRedBanner2 = this.add.image(((window.innerWidth / 2) - 10), ((window.innerHeight * 0.10) + 10), 'column-red-banner-flipped').setScale(3).setOrigin(0, 0);
+
+    exitDoor = this.add.image(((window.innerWidth / 2) - 200), (window.innerHeight * 0.10), 'exit-door').setScale(3).setOrigin(0, 0);
+    
     singleFloorTile = this.add.image(50, (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
     singleFloorTile2 = this.add.image((50 + (singleFloorTile.width * 4)), (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
 
@@ -83,7 +96,7 @@ function create () {
         ),
         frameRate: 5,
         repeat: -1
-    })
+    });
     this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers(
@@ -94,7 +107,7 @@ function create () {
         ),
         frameRate: 5,
         repeat: -1
-    })
+    });
 
     // add collision between player and platforms
     this.physics.add.collider(player, platforms);
