@@ -6,25 +6,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.shadow{
+    text-shadow: #dab894 2px 2px;
+}
 #main-menu,
 #modal1,
-#modal2{
+#modal2,
+#modal3{
     background-color: #c6e2e9;
     color: #000814;
     font-family: 'MedievalSharp', sans-serif;
     font-weight: 600;
 }
+#modal3{
+    height: 300px !important;
+    width: 400px !important;
+}
 
 .modal{
     animation: bounceInDown !important; 
     animation-duration: 1s !important; /* don't forget to set a duration! */
+    
 }
 
 .modal.modal-fixed-footer .modal-footer{
     text-align: center;
     background-color: #f1ffc4;
-    
 }
+.modal.modal-fixed-footer .modal-content{
+    overflow-y: hidden !important;
+}
+
  .modal-footer > a{
     animation: pulse !important;
     animation-delay: 1s !important;
