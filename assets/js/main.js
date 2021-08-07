@@ -3,5 +3,7 @@ console.log(Phaser);
 $(document).ready(function(){
   
   $('.modal').modal();
-  $('.modal').modal('open');
+  $('#modal1').modal('open');
+  
+  
 });
