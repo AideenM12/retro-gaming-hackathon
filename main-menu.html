@@ -1,127 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- External libraries/frameworks CSS links -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- External libraries/frameworks CSS links -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
          integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
-       <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-       <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-       <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <!-- Project Custom CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Retro Hackathon 🎮</title>
-</head>
-<body id="main-menu">
-   <header>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Needs More Cowbell</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#modal2" class="modal-trigger">How to Play</a></li>
-          <li><a href="#modal3" class="modal-trigger">Select Difficulty</a></li>
-        </ul>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+      <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+      <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+      <!-- Project Custom CSS File -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Retro Hackathon 🎮</title>
+   </head>
+   <body id="main-menu">
+      <!--Navigation-->
+      <header>
+         <nav>
+            <div class="nav-wrapper">
+               <a href="#" class="brand-logo">Needs More Cowbell</a>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#modal2" class="modal-trigger">How to Play</a></li>
+                  <li><a href="#modal3" class="modal-trigger">Select Difficulty</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- Modals -->
+      <div id="modal1" class="modal modal-fixed-footer">
+         <div class="modal-content center ">
+            <h4 class="shadow">Welcome to Needs More Cowbell!</h4>
+            <p>Think you can finish our awesome retro game? Well you probably can.</p>
+            <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Zomb-dude-bro" alt="Zomb-dude-bro">
+         </div>
+         <div class="modal-footer center">
+            <a href="#modal2" class="modal-close waves-effect waves-green btn-flat center modal-trigger ">How To Play</a>
+            <a href="#modal3" class="modal-close waves-effect waves-green btn-flat center modal-trigger">Start Game!</a>
+         </div>
       </div>
-    </nav>
-   </header>
-  
-
-  <!-- Modal Structure -->
-  
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content center ">
-      <h4 class="shadow">Welcome to Needs More Cowbell!</h4>
-      <p>Think you can finish our awesome retro game? Well you probably can.</p>
-      <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Zomb-dude-bro" alt="Zomb-dude-bro">
-    </div>
-    <div class="modal-footer center">
-      <a href="#modal2" class="modal-close waves-effect waves-green btn-flat center modal-trigger ">How To Play</a>
-      <a href="#modal3" class="modal-close waves-effect waves-green btn-flat center modal-trigger">Start Game!</a>
-    </div>
-  </div>
-  
-  <div id="modal2" class="modal modal-fixed-footer">
-    <div class="modal-content center">
-      <h4 class="shadow">How to play</h4>
-      <div class="container">
-      <ul class="list-inline">
-        <li>1. Click the Start button</li><br>
-        <li>2. Play the game.</li><br>
-        <li>3. Try and win the game!</li><br>
-        <li>4. You've probably won so go and play again!</li><br>
-        <li>5. Get more cowbell!</li>
-      </ul>
-      <div class="row" id="wiz-img2">
-      <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
+      <div id="modal2" class="modal modal-fixed-footer">
+         <div class="modal-content center">
+            <h4 class="shadow">How to play</h4>
+            <div class="container">
+               <ul class="list-inline">
+                  <li>1. Click the Start button</li>
+                  <br>
+                  <li>2. Play the game.</li>
+                  <br>
+                  <li>3. Try and win the game!</li>
+                  <br>
+                  <li>4. You've probably won so go and play again!</li>
+                  <br>
+                  <li>5. Get more cowbell!</li>
+               </ul>
+               <div class="row" id="wiz-img2">
+                  <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
+               </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <a href="#modal3" class="modal-close waves-effect waves-green btn-flat modal-trigger">Start Game!</a>
+         </div>
       </div>
-    </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#modal3" class="modal-close waves-effect waves-green btn-flat modal-trigger">Start Game!</a>
-    </div>
-  </div>
-
-  <div id="modal3" class="modal modal-fixed-footer">
-    <div class="modal-content center">
-     <h4 class="shadow">Select Difficulty</h4>       
-      <div class="row" id="wiz-img3">
-      <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
+      <div id="modal3" class="modal modal-fixed-footer">
+         <div class="modal-content center">
+            <h4 class="shadow">Select Difficulty</h4>
+            <div class="row" id="wiz-img3">
+               <img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" id="Wizard-dude" alt="Wizard-dude">
+            </div>
+         </div>
+         <div class="modal-footer">
+            <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Easy</a>
+            <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Medium</a>
+            <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Hard</a>
+         </div>
       </div>
-    </div>
-    
-    <div class="modal-footer">
-      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Easy</a>
-      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Medium</a>
-      <a href="#modal4" class="modal-close waves-effect waves-green btn-flat modal-trigger">Hard</a>
-    </div>
-  </div>
-
-  <div id="modal4" class="modal modal-fixed-footer">
-    <div class="modal-content center">
-     <h4 class="shadow">Select Character</h4>       
-      
-    </div>
-    
-    <div class="modal-footer modal-4">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_f_idle_anim_f0.png" width="28" height="35"></a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" width="28" height="35"></a>
-      
-    </div>
-  </div>
-
-  <footer class = "page-footer  ">
-    <div class="row">
-       <div class="col s6 left">
-          <p class="foot-logo">Needs More Cowbell</p>
-       </div>
-       <div class="col s6 right">
-          <ul class="list-inline right">
-             <li><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i
-                class="fab fa-facebook-square"><span class="sr-only">Facebook</span></i></a></li>
-             <li><a href="https://www.instagram.com/" rel="noopener" target="_blank">
-                <i class="fab fa-instagram "><span class="sr-only">Instagram</span></i></a>
-             </li>
-             <li><a href="https://www.github.com/" rel="noopener" target="_blank">
-                <i class="fab fa-github "><span class="sr-only">GitHub</span></i></a>
-             </li>
-          </ul>
-       </div>
-    </div>
- </footer>
-
-  <!---Materialize scripts-->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-    <!-- Phaser Library Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js" integrity="sha512-kg6fSrg6FkD9Ua02PzuA289KatVkTp6HdiFrSKwnz1bKBeKe5JG54rNeYZeghYO/I4ka49rb9H/9Ezcq9Se3iQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Project Custom JS Script -->
-    <script src="assets/js/main.js"></script>
-</body>
+      <div id="modal4" class="modal modal-fixed-footer">
+         <div class="modal-content center">
+            <h4 class="shadow">Select Character</h4>
+         </div>
+         <div class="modal-footer modal-4">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_f_idle_anim_f0.png" width="28" height="35"></a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat btn-4"><img src="assets/tileset/frames/wizzard_m_idle_anim_f0.png" width="28" height="35"></a>
+         </div>
+      </div>
+      <!--Footer-->
+      <footer class = "page-footer  ">
+         <div class="row">
+            <div class="col s6 left">
+               <p class="foot-logo">Needs More Cowbell</p>
+            </div>
+            <div class="col s6 right">
+               <ul class="list-inline right">
+                  <li><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i
+                     class="fab fa-facebook-square"><span class="sr-only">Facebook</span></i></a></li>
+                  <li><a href="https://www.instagram.com/" rel="noopener" target="_blank">
+                     <i class="fab fa-instagram "><span class="sr-only">Instagram</span></i></a>
+                  </li>
+                  <li><a href="https://www.github.com/" rel="noopener" target="_blank">
+                     <i class="fab fa-github "><span class="sr-only">GitHub</span></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!---Materialize scripts-->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- Phaser Library Script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js" integrity="sha512-kg6fSrg6FkD9Ua02PzuA289KatVkTp6HdiFrSKwnz1bKBeKe5JG54rNeYZeghYO/I4ka49rb9H/9Ezcq9Se3iQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- Project Custom JS Script -->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
