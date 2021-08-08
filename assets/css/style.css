@@ -266,13 +266,21 @@ nav {
 }
 
 #cta {
-	padding-top: 1em;
+	padding: 1em 0 2em;
 	font-size: 2em;
 }
 
 #necromancer-start {
-	height: 4rem;
+	height: 4em;
   }
+
+#dlc {
+	font-size: .8em;
+}
+
+video {
+	height: 15em;
+}
 
 
 /*Footer and Icons--*/
