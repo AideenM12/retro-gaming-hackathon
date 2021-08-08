@@ -73,13 +73,35 @@ The central goal is to create an interactive game with retro gaming themes and s
 
 * As a first time user I want to play a game with intuitive UX design
 * As a first time user I want to play a game thematically inspired by retro games. 
-* As a returning user I ...
+* As a returning user I want to beat the game quicker than my last attempt.
 
 # Structure
 
 ## Features
 
 The website is divided into four separate pages. A home page, a tours page, a meet-ups page and a contact page. Each page has the same heading located on the left with navigation located on the right on the same row. Each page has the same footer with social media icon links on the right and the webpage title to the left. The same hero image is used on each page and located directly beneath the navigation bar. A row of navigation links are located directly below the hero image also. 
+
+## concept
+
+Initially we wanted to create a platform style game that would test the players platforming skills as well as their perception skills. To do this we would create a game that would ask the player question based on visual in the game. Correct answers would make the next level easer to complete. 
+
+<img src="assets/doc-images/game-wire-questions.PNG" width="450" height="250" alt="wireframe of game concept">
+
+<br>
+
+<img src="assets/doc-images/game-wire.PNG" width="450" height="250" alt="wireframe of game concept">
+
+## MVP
+
+* Create a basic platformer game that includes:
+    * Game physics and collision.
+    * With 3 playable levels.
+    * Character selection.
+
+## falling out of scope
+
+During development of the game, we soon realised that we needed to make a choice between including the perception test mechanic and our team goal of allowing members to attempt to create a level of the game (in a new language for many of us).we could allow our lead Dev to work alone on new mechanics or he could use this time to walk us through to process of developing basic levels and coach us through this challenge. The team decided that hitting our MVP and all trying to work on a game level was the best way to move forward. 
+
 
 #### Home Page.
 
@@ -99,6 +121,13 @@ The main menu consists of a series of modals.
 
 <img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
+#### 404 page
+
+* This page exists to inform users that the page they are looking for does not exist.
+Instead of using a generic 404 page we decided to ensure it's stylings keep to the same themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
+* The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
+
+<img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
 * The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
@@ -202,6 +231,7 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 7. Press Enter. A local clone will be created.  
 
 ## Credits
+* 404 cow img from https://pikwizard.com/photo/brown-and-white-cow/a23d59de9a85b648a35c5a97e689d139 
 
 ### Media
 
