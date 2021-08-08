@@ -303,25 +303,18 @@ nav ul a:hover {
 
 /*------------------------Game-Over CSS----------------------- */
 
-#game-over-body {
-	background-color: #c6e2e9;
-}
-
 #show-me-your-body {
 	background-color: #c6e2e9;
 }
 
-#game-over-head>a {
-	font-size: 3em;
-}
-
-#game-over-dec {
-	font-size: 2em;
+#game-over-dec>h1 {
+	font-size: 7em;
 	text-shadow: #dab894 2px 2px;
 	text-align: center;
-  }
+	padding: 0px 0px 25px 0px
+}
 
-#game-over-body {
+#game-over-main {
 	text-align: center;
 }
 
@@ -332,6 +325,10 @@ nav ul a:hover {
 #necromancer:hover {
 	transform: scale(1.4);
   }
+
+#necromancer-dialogue {
+	font-size: 2em;
+}
   
 #high-brow-bell {
 	color: #000;
