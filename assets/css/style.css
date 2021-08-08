@@ -12,6 +12,7 @@
 /*------------Main Menu Page CSS-----------*/
 
 body {
+	font-family: 'MedievalSharp', sans-serif;
 	min-height: 100vh;
 }
 /* 404 page */
@@ -301,3 +302,34 @@ nav ul a:hover {
 
 
 /*---------------------End of Main Menu CSS--------------------*/
+
+/* Game Over */
+
+#game-over-body {
+	background-color: #c6e2e9;
+}
+
+#game-over-head {
+	font-size: 5em;
+	padding: 30px 0px;
+	margin: 20px auto;
+	text-shadow: #dab894 2px 2px;
+	text-align: center;
+  }
+
+#game-over-body {
+	
+}
+
+#necromancer {
+	height: 4rem;
+  }
+  
+#necromancer:hover {
+	height: 5rem;
+  }
+  
+#high-brow-bell {
+	color: #000;
+	text-decoration: none;
+  }
