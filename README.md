@@ -231,6 +231,7 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 7. Press Enter. A local clone will be created.  
 
 ## Credits
+* 404 cow img from https://pikwizard.com/photo/brown-and-white-cow/a23d59de9a85b648a35c5a97e689d139 
 
 ### Media
 
