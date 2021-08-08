@@ -128,6 +128,11 @@ Instead of using a generic 404 page we decided to ensure it's stylings keep to t
 * The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
 
 <img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
+* The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
+
+<img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
+
+ 
 
 ### Existing Features
 * The title header is located on the left of every page. Its function is to build and promote brand awareness whilst also creating a positive emotional response from the user by showcasing the color-scheme and typography specifically chosen for the brand.
@@ -144,23 +149,15 @@ Instead of using a generic 404 page we decided to ensure it's stylings keep to t
 ### Design
 
 **Typography**
-I chose the 'Special Elite' font because it me reminded of the fonts used on old-style beer labels which helps 
-with the aesthetic I wanted to create. I contrasted this with the 'Zilla Slab' font in order to complement the 
-'Special Elite' font and also to maintain some style neutrality in order to prevent a style overload on the website.
+The 'MedievalSharp' font was chosen to match the medieval aesthetic of the game. It was found on google fonts.
 
 **Colours**
-I chose my color palette using the https://coolors.co website which my mentor had recommended. I chose these colors because
-I felt the palette best represented what the website offered, a friendly exploration of Galway's pub scene and night life.
+The color palette was chosen using the https://coolors.co website. This particular palette was chosen for its simplicity and because the basic colours presented are redolent of those often found in retro PC games.
 
 
-<img src="documentation/milestone1-palette (640x480).jpg" width="450" height="250" alt="milestone palette">
+<img src="assets/doc-images/Hackathon-palette.png" width="450" height="250" alt="milestone-palette">
 
-* Oxford Blue - Hex: #000022 | RGB (0, 0, 34)
-* Oxford Blue - Hex: #001242 | RGB (0, 18, 66)
-* Lavender Blue - Hex: #C1D3FE | RGB (193, 211, 254)
-* Blue NCS - Hex: #0094C6 | RGB (0, 148, 198)
-* Blue Sapphire - Hex: #005E7C | RGB (0, 94, 124)
-* Rich Black FOGRA 29 - Hex: #040F16 | RGB (4, 15, 22)
+
 
 **Imagery**
 The imagery used was primarily found on [unsplash](https://unsplash.com). These images were chosen because they matched the aesthetic and colour-scheme of the website whilst also providing an accurate representation of what was being offered. In the images Irish bars can be seen, as can drinks and also people socialising. The images of the testimonials section were provided by the developer to give the site a more authentic feel.  
