@@ -123,7 +123,6 @@ The main menu consists of a series of modals.
 <img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
 
-<img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
 * The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
@@ -137,6 +136,9 @@ The main menu consists of a series of modals.
 <img src="assets/doc-images/creditspage.png" width="450" height="250" alt="credits-page">
 
 #### 404 page
+
+
+<img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
 
 * This page exists to inform users that the page they are looking for does not exist.
 Instead of using a generic 404 page we decided to ensure it's stylings keep to the same themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
