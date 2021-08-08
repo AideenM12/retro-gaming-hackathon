@@ -8,6 +8,7 @@
        * [Features](#Features) 
          * [Home Page](#Home-Page)
          * [Existing Features](#Existing-Features)
+         * [Out of Scope Features](#Out-of-Scope-Features)
         * [Design](#Design)
     * [Skeleton](#Skeleton)
       * [Wireframes](#Wireframes)
@@ -117,21 +118,29 @@ The main menu consists of a series of modals.
 
 <img src="assets/doc-images/modal2.png" width="450" height="250" alt="modal2">
 
-* The third modal is triggered when the user selects the "Start Game" button. This modal allows the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard.
 
+* The third modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 <img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
-#### 404 page
-
-* This page exists to inform users that the page they are looking for does not exist.
-Instead of using a generic 404 page we decided to ensure it's stylings keep to the same themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
-* The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
 
 <img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
 * The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
 
+
+
+#### Credits page
+* The Credits page showcases all the collaborators who worked together to make this project. Links to each individual collaborator's github page can be found on this page alongside a link to the main menu page. A link to the site repository can also be found on this page, many thanks to Andy for taking the time to work with [Materializecss](https://materializecss.com/) for the first time to create this page. 
+
+
+<img src="assets/doc-images/creditspage.png" width="450" height="250" alt="credits-page">
+
+#### 404 page
+
+* This page exists to inform users that the page they are looking for does not exist.
+Instead of using a generic 404 page we decided to ensure it's stylings keep to the same themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
+* The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
  
 
 ### Existing Features
@@ -144,7 +153,11 @@ Instead of using a generic 404 page we decided to ensure it's stylings keep to t
 
 * The footer follows the same design as the header. The website title is located on the left and links to Facebook, Instagram and Github are stored in the icons to the right. Each of these links opens in a new tab so as to keep the user on the business page longer. 
 
+### Out of Scope Features
 
+* An original third modal was triggered when the user selects the "Start Game" button. This modal intended to allow the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard. This was deemed out of scope for this current project due to conflicts with the Phaser framework but will possibly be investigated at a later stage.
+
+<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
 ### Design
 
