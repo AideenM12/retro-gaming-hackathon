@@ -63,6 +63,17 @@ function create () {
     kill = this.physics.add.staticGroup();
     killFloor = kill.create((floor.width * 3), ((window.innerHeight * 1) - 48), 'acid-floor').setScale(4, 3).setOrigin(0, 0).refreshBody();
 
+    // add small animation to kill floor
+    this.tweens.add({
+        targets: killFloor,
+        scaleY: 5,
+        y: (window.innerHeight * 1) - 24,
+        duration: 1500,
+        yoyo: true,
+        ease: 'Linear',
+        repeat: -1
+    });
+
     // static scene objects doors/skulls/ladders etc
     door = this.add.image(50, (window.innerHeight * 0.65), 'door').setScale(3).setOrigin(0, 0);
     doorCloseAudio = this.sound.play('door-close');
@@ -72,7 +83,9 @@ function create () {
     column2 = this.add.image(((window.innerWidth / 2) - 10), (window.innerHeight * 0.16), 'column-flipped').setScale(3).setOrigin(0, 0);
     columnRedBanner2 = this.add.image(((window.innerWidth / 2) - 10), ((window.innerHeight * 0.10) + 10), 'column-red-banner-flipped').setScale(3).setOrigin(0, 0);
 
-    exitDoor = this.add.image(((window.innerWidth / 2) - 200), (window.innerHeight * 0.10), 'exit-door').setScale(3).setOrigin(0, 0);
+    // exit door
+    exit = this.physics.add.staticGroup();
+    exitDoor = exit.create(((window.innerWidth / 2) - 200), (window.innerHeight * 0.10), 'exit-door').setScale(3).setOrigin(0, 0).refreshBody();
     
     singleFloorTile = this.add.image(50, (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
     singleFloorTile2 = this.add.image((50 + (singleFloorTile.width * 4)), (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
@@ -121,7 +134,11 @@ function create () {
     // add collision between player and platforms
     this.physics.add.collider(player, platforms);
 
+    // overlap detection between player and killFloor
     this.physics.add.overlap(player, killFloor, death, null, this);
+
+    //overlap detection between player and exitDoor
+    this.physics.add.overlap(player, exitDoor, nextLevel, null, this);
 
     // create keyboard detection for up/down/right/left arrow
     cursors = this.input.keyboard.createCursorKeys();
@@ -147,8 +164,12 @@ function update () {
 
 };
 
+function nextLevel (player, exitDoor) {
+    console.log("win")
+};
+
 function death (player, killFloor) {
     this.registry.destroy();
     this.events.off();
     this.scene.restart();
-}
+};
