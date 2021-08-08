@@ -38,6 +38,7 @@ function preload () {
     this.load.image('background', 'assets/tileset/frames/environment/wall/level-background.png')
 
     this.load.audio('door-close', 'assets/audio/door-creek-slam-egg.wav');
+    this.load.audio('dungeon-1', 'assets/audio/Dungeon-1.mp3')
 
     this.load.spritesheet(
         'player',
@@ -51,8 +52,13 @@ function preload () {
 
 // create assets
 function create () {
-    // level background
+    // level background & level audio
     levelBackground = this.add.image(0, 0, 'background').setScale(.3, .2).setOrigin(0, 0);
+    levelMusic = this.sound.add('dungeon-1', {
+        volume: 0.2,
+        loop: true
+    });
+    levelMusic.play();
 
     // create level platforms
     platforms = this.physics.add.staticGroup();
