@@ -17,60 +17,170 @@
 
 ## Testing User Stories
 
-1. As a first time user I want to learn basic English vocabulary with the aid of intuitive visual images/graphics.
+### Test Case 1.
 
-<img src="documentation/doc-images/user1.jpg" width="150" height="350">  <img src="documentation/doc-images/cookie-test.png" width="400" height="300">  <img src="documentation/doc-images/object-test.png" width="400" height="300">
+1. As a first time user I want to play a game with intuitive UX design
+
+**Description**
+Verify that the game's UX is intuitive.
+
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. A modal will appear offering the user the choice to read gameplay instructions or begin the game.
+4. If the user selects the "How to Play" button a modal with a list of game play instructions appears and also a button to start the game.
+5. Once the user has selected the start game button a modal will appear to ask the user to select the gender of their character. 
+6. Once the character has been selected game play will begin.
+7. These options are also available in the navigation bar for ease of use.
+
+**Expected Result:**
+The user will navigate to the site's gameplay with ease.
+
+**Actual Result:**
+The user can navigate to the site's gameplay with ease.
+
+**Pass/Fail:**
+Pass
+
+**Image of Test Result:** 
+
+<img src="assets/doc-images/modal1.png" width="450" height="250" alt="modal1">
+
+<img src="assets/doc-images/modal2.png" width="450" height="250" alt="modal2">
+
+<img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4"> 
 
 
-   - All graphics were chosen specfically to appeal to the target audience and scaled to fit all potential devices. Each image depicts the target language in a clear and non-confusing way. The images are colorful and fun in order to promote a positive emotional response from the user. Testing was done to ensure the site images and vocabulary were understandable and applicable to the target audience.
         
+### Test Case 2.
+
+2. As a first time user I want to play a game thematically inspired by retro games.
+
+**Description**
+Verify that the game is inspired by retro games.
+
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. A modal will appear offering the user the choice to read gameplay instructions or begin the game.
+4. Observe the retro style graphics and game play that have been implemented to fulfill this task. 
+5. Observe the custom audio that has been implemented to further enhance the retro feel of the game. 
 
 
-2. As a first time user I want to recieve feedback when I interact with the purposely built interactive parts of the site.
+**Expected Result:**
+The user will be presented with a game that has a similar gameplay and aesthetic to that of retro games.
 
-<img src="documentation/doc-images/user2.jpg" width="150" height="350">
+**Actual Result:**
+The user is presented with a game that has a similar gameplay and aesthetic to that of retro games.
 
-   - The SweetAlert pop ups are designed to ensure that even users with a virtually non-existant level of English can be sure that they have selected the correct answer. The green color and the affirmative 'Yes' presented in the image provide two indications and green is often used as an affirmative color globally. Testing was done to ensure that the pop-ups appear as expected when the user interacts with the solutions buttons.
+**Pass/Fail:**
+Pass
+
+
+### Test Case 3.    
+
+3.  As a first time user I want a fun medieval style platform game.
+
+**Description**
+Verify that the game is a platform game with a medieval style and aesthetic.
+
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. Begin gameplay.
+4. Observe the medieval dungeon setting coupled with the medieval wizard characters. 
+5. Observe the platform format in which the game has been presented.
+6. Observe the custom audio designed to complement this game thematically.
+
+**Expected Result:**
+The user will be presented with a platform game with a medieval style and aesthetic.
+
+**Actual Result:**
+The user is presented with a platform game with a medieval style and aesthetic.
+
+**Pass/Fail:**
+Pass
+
+**Image of Test Result:** 
+
+<img src="assets/doc-images/cowbell.gif" width="600" height="400">
+
+
+### Test Case 4. 
+
+4. As a returning user I want to beat the game quicker than my last attempt.
+
+**Description**
+Verify that the user has the option of replaying the game.
+
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. Begin gameplay.
+4. Continuing playing the game for as long as desired
+
+
+**Expected Result:**
+The user will be able to play the game as much as they wish.
+
+**Actual Result:**
+The user is able to play the game as much as they wish.
+
+**Pass/Fail:**
+Pass
+
 
     
+### Test Case 5.
 
-3. As a first time user I want to intuitively navigate the site to find my desired vocabulary topic with relative ease.
+5. As a user I want the option to select the gender of my character.
 
-<img src="documentation/doc-images/user4.jpg" width="150" height="350">
+**Description**
+Verify that the user has the option of selecting the gender of their character.
 
-- The quiz topics are presented directly below the hero image and visible on all screen sizes so that the user can navigate based on their own curiousity and the nav-heading and h1 tag are both interactively linked to the home-page so that users can find themselves back at the home-page easily to explore the other quizzes. Testing was done to ensure each button functions as expected and brings users to the chosen quiz topic.
-
-   
-
-4. As a first time user I want to be able to learn vocabulary that is fitting for the level of beginner.
-
-<img src="documentation/doc-images/user5.jpg" width="150" height="350">
-
-<img src="documentation/doc-images/user6.jpg" width="150" height="350">
-
-   - All vocabulary has been selected based on the vocabulary covered in children's beginner English exams and is often the same vocabulary they encounter in a school enviroment both in their native language and in English. Testing was done to ensure the site vocabulary aligned with the vocabulary suitable for beginner English younger learners.
-
-    
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. Click the 'Start Game' button
+4. Choose the gender of your character in the pop up modal.
 
 
-5. As a first time user I want to be able to be intuitvely aware of when I have made an error in order to aid my learning.
+**Expected Result:**
+The user will be able to select the gender of their character.
 
- <img src="documentation/doc-images/user3.jpg" width="150" height="350">
+**Actual Result:**
+The user is able to select the gender of their character.
 
-   - The red SweetAlert popup is designed to ensure that users are aware that they have made an error. The animate.css animation chosen for this pop up was also chosen to indicate error in that it is not a sleek movement, but rather a stiff and jarring motion designed to halt the user. Testing was done to ensure this popup appears when required after the specified user action. 
+**Pass/Fail:**
+Pass
+
+**Image of Test Result:** 
+
+<img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4"> 
 
 
-
+### Test Case 6
   
-6. As a returning user I want to be able to repeat the prescribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
+6. As a user I want a game with fun, unique audio. 
 
-    - Twelve questions are selected from a slightly larger bank in order to give the user a slightly newer experience upon their first returning visit but the material remains mostly the same in order to boost familiarity and confidence with the target language. Testing was done to ensure that all the material appears over the course of multiple visits to the site but also that no question repeats in a single quiz session.
+**Description**
+Verify that the game has it's own custom unique audio.
 
+**Steps**
+1. Open one's internet browser of choice.
+2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+3. Begin gameplay.
+4. Observe the custom audio designed to complement this game thematically.
 
+**Expected Result:**
+The user will be presented with a platform game with it's own custom audio.
 
-7. As a returning user I want to boost the learning process by encountering the same visual graphics in order to assist in the memorisation of the vocabulary.
+**Actual Result:**
+The user is presented with a platform game with it's own custom audio.
 
-    - The images presented with the target language do not change. There is no variety of images when studying a specific piece of vocabulary so the user can learn through the repetition of the visual aids alongside the target language. 
+**Pass/Fail:**
+Pass
+
 
 
 ## Validators
