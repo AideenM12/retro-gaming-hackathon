@@ -173,3 +173,12 @@ function death (player, killFloor) {
     this.events.off();
     this.scene.restart();
 };
+
+
+$(document).ready(function(){
+  
+  $('.modal').modal();
+  $('#modal1').modal('open');
+  
+  
+});
