@@ -156,8 +156,8 @@ nav {
 #main-menu,
 #modal1,
 #modal2,
-#modal3,
-#modal4 {
+#modal3
+ {
 	background-color: #c6e2e9;
 	color: #000814;
 	font-family: 'MedievalSharp', sans-serif;
@@ -170,11 +170,6 @@ nav {
 }
 
 #modal3 {
-	height: 300px !important;
-	width: 400px !important;
-}
-
-#modal4 {
 	height: 200px !important;
 	width: 400px !important;
 }
