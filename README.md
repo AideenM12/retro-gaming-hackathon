@@ -5,17 +5,17 @@
        * [Project Goals](#Project-Goals)
        * [User Stories](#User-Stories) 
     * [Structure](#Structure)
+       * [Concept](#Concept)
+       * [MVP](#MVP)
+       * [Falling out of scope](#Falling-out-of-scope)
        * [Features](#Features) 
          * [Home Page](#Home-Page)
          * [Existing Features](#Existing-Features)
-         * [Out of Scope Features](#Out-of-Scope-Features)
-        * [Design](#Design)
+         * [Design](#Design)
     * [Skeleton](#Skeleton)
       * [Wireframes](#Wireframes)
       * [Technolgies Used](#Technologies-Used)
     * [Testing](#Testing)
-      * [Testing User Stories](#Testing-User-Stories)
-      * [Known Bugs and Issues](#Known-Bugs-and-Issues)
     * [Deployment](#Deployment)
       * [Making a clone to run locally](#Making-a-clone-to-run-locally)
     * [Credits](#Credits)
@@ -39,8 +39,6 @@ The live website can be viewed [here]()
 * [Aideen](https://github.com/AideenM12)
 
 * [Charlie](https://github.com/charliehawley)
-
-* [Gemma](https://github.com/85GLC85)
 
 * [Craig](https://github.com/CraigThomasson)
 
@@ -74,15 +72,16 @@ The central goal is to create an interactive game with retro gaming themes and s
 
 * As a first time user I want to play a game with intuitive UX design
 * As a first time user I want to play a game thematically inspired by retro games. 
+* As a first time user I want a fun medieval style platform game. 
 * As a returning user I want to beat the game quicker than my last attempt.
+* As a user I want the option to select the gender of my character.
+* As a user I want a game with fun, unique audio. 
 
 # Structure
 
-## Features
 
-The website is divided into four separate pages. A home page, a tours page, a meet-ups page and a contact page. Each page has the same heading located on the left with navigation located on the right on the same row. Each page has the same footer with social media icon links on the right and the webpage title to the left. The same hero image is used on each page and located directly beneath the navigation bar. A row of navigation links are located directly below the hero image also. 
 
-## concept
+## Concept
 
 Initially we wanted to create a platform style game that would test the players platforming skills as well as their perception skills. To do this we would create a game that would ask the player question based on visual in the game. Correct answers would make the next level easer to complete. 
 
@@ -99,10 +98,16 @@ Initially we wanted to create a platform style game that would test the players 
     * With 3 playable levels.
     * Character selection.
 
-## falling out of scope
+## Falling out of scope
 
-During development of the game, we soon realised that we needed to make a choice between including the perception test mechanic and our team goal of allowing members to attempt to create a level of the game (in a new language for many of us).we could allow our lead Dev to work alone on new mechanics or he could use this time to walk us through to process of developing basic levels and coach us through this challenge. The team decided that hitting our MVP and all trying to work on a game level was the best way to move forward. 
+* During development of the game, we soon realised that we needed to make a choice between including the perception test mechanic and our team goal of allowing members to attempt to create a level of the game (in a new language for many of us).we could allow our lead Dev to work alone on new mechanics or he could use this time to walk us through to process of developing basic levels and coach us through this challenge. The team decided that hitting our MVP and all trying to work on a game level was the best way to move forward. 
 
+* An original third modal was triggered when the user selects the "Start Game" button. This modal intended to allow the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard. This was deemed out of scope for this current project due to conflicts with the Phaser framework but will possibly be investigated at a later stage.
+
+<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
+
+
+## Features
 
 #### Home Page.
 
@@ -120,13 +125,9 @@ The main menu consists of a series of modals.
 
 
 * The third modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
-<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
-
-
-<img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
-* The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
+
 
 
 
@@ -141,40 +142,31 @@ The main menu consists of a series of modals.
 * This page exists to inform users that the page they are looking for does not exist.
 Instead of using a generic 404 page we decided to ensure it's stylings keep to the same themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
 * The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
+
+<img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
  
 
 ### Existing Features
-* The title header is located on the left of every page. Its function is to build and promote brand awareness whilst also creating a positive emotional response from the user by showcasing the color-scheme and typography specifically chosen for the brand.
-
-* The navigation bar is located to the left of the title header on every page. It is located where a user would expect to find it to promote ease of use and easy navigation. Bootstrap technology allows it to collapse into a hamburger style on mobile devices again to match the expectation of the user and also make efficient use of screen space on smaller screens.
-
-* The hero image is located on the desktop version of each page. 
 
 
-* The footer follows the same design as the header. The website title is located on the left and links to Facebook, Instagram and Github are stored in the icons to the right. Each of these links opens in a new tab so as to keep the user on the business page longer. 
 
-### Out of Scope Features
-
-* An original third modal was triggered when the user selects the "Start Game" button. This modal intended to allow the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard. This was deemed out of scope for this current project due to conflicts with the Phaser framework but will possibly be investigated at a later stage.
-
-<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
 ### Design
 
 **Typography**
-The 'MedievalSharp' font was chosen to match the medieval aesthetic of the game. It was found on google fonts.
+The 'MedievalSharp' font was chosen to match the medieval aesthetic of the game. It was found on [Google fonts](https://fonts.google.com/).
 
 **Colours**
 The color palette was chosen using the https://coolors.co website. This particular palette was chosen for its simplicity and because the basic colours presented are redolent of those often found in retro PC games.
 
 
-<img src="assets/doc-images/Hackathon-palette.png" width="450" height="250" alt="milestone-palette">
+<img src="assets/doc-images/Hackathon-palette.png" width="450" height="250" alt="hackathon-palette">
 
 
 
 **Imagery**
-The imagery used was primarily found on [unsplash](https://unsplash.com). These images were chosen because they matched the aesthetic and colour-scheme of the website whilst also providing an accurate representation of what was being offered. In the images Irish bars can be seen, as can drinks and also people socialising. The images of the testimonials section were provided by the developer to give the site a more authentic feel.  
-. 
+ 
+
 ## Skeleton
 
 ### Wireframes
@@ -198,10 +190,6 @@ The imagery used was primarily found on [unsplash](https://unsplash.com). These 
     - Buttons, images and popups were animated using Animate.css.
 - [Fontawesome](https://fontawesome.com/)
     - The icons used on this page were found in Fontawesome.
-- [Hover.css](https://ianlunn.github.io/Hover/) 
-    - The hover feature of the navigation links below the hero image were implemented using Hover.css. 
-- [Popper.js](https://popper.js.org/)
-    - Certain bootstrap responsive elements require Popper.js in order to function correctly.
 - [Balsamiq](https://balsamiq.com/)
     - The wireframes for this project were created using Balsamiq.
 - [Unsplash](https://unsplash.com/)
@@ -210,8 +198,6 @@ The imagery used was primarily found on [unsplash](https://unsplash.com). These 
     - This was used to format the CSS stylesheet.
 - [Freeformatter- HTML formatter](https://www.freeformatter.com/html-formatter.html)
     - This was used to format each HTML page
-- [Adobe Photoshop](https://photoshop.adobe.com/) 
-    - Some images were resized using Adobe Photoshop.
 - [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) 
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
 
