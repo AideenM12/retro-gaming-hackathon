@@ -22,6 +22,7 @@ let playerSprite = 'assets/tileset/frames/playerSprite/wiz-f-spritesheet.png';
 
 function preload () {
     this.load.image('floor', 'assets/tileset/frames/environment/floor/floor-group.png');
+    this.load.image('acid-floor', 'assets/tileset/frames/environment/floor/acid-floor.png');
     this.load.image('single-floor', 'assets/tileset/frames/environment/floor/floor_5.png');
     this.load.image('door', 'assets/tileset/frames/environment/door/doors_leaf_closed.png');
     this.load.image('exit-door', 'assets/tileset/frames/environment/door/doors_all.png');
@@ -32,6 +33,7 @@ function preload () {
     this.load.image('column-flipped', 'assets/tileset/frames/environment/column/wall_column_mid-flipped.png');
     this.load.image('column-red-banner', 'assets/tileset/frames/environment/wall/wall_banner_red.png');
     this.load.image('column-red-banner-flipped', 'assets/tileset/frames/environment/wall/wall_banner_red-flipped.png');
+    this.load.image('background', 'assets/tileset/frames/environment/wall/level-background.png')
 
     this.load.audio('door-close', 'assets/audio/door-creek-slam-egg.wav');
 
@@ -46,6 +48,9 @@ function preload () {
 };
 
 function create () {
+    // level background
+    levelBackground = this.add.image(0, 0, 'background').setScale(.3, .2).setOrigin(0, 0);
+
     // create level platforms
     platforms = this.physics.add.staticGroup();
     floor = platforms.create(0, ((window.innerHeight * 1) - 48) ,'floor').setScale(3).setOrigin(0, 0).refreshBody();
@@ -53,6 +58,10 @@ function create () {
     floor3 = platforms.create(((floor.width * 3) + (floor2.width * 4)), ((window.innerHeight * 0.8) - 48), 'floor').setScale(1.5, 3).setOrigin(0, 0).refreshBody();
     floor4 = platforms.create(((floor.width * 3) + (floor3.width * 6)), (window.innerHeight * 0.5), 'floor').setScale(3).setOrigin(0, 0).refreshBody();
     floor5 = platforms.create(((floor.width * 3.5) + (floor4.width)), (window.innerHeight * 0.2), 'floor').setScale(3).setOrigin(0, 0).refreshBody();
+
+    // kill floor
+    kill = this.physics.add.staticGroup();
+    killFloor = kill.create((floor.width * 3), ((window.innerHeight * 1) - 48), 'acid-floor').setScale(4, 3).setOrigin(0, 0).refreshBody();
 
     // static scene objects doors/skulls/ladders etc
     door = this.add.image(50, (window.innerHeight * 0.65), 'door').setScale(3).setOrigin(0, 0);
@@ -112,9 +121,10 @@ function create () {
     // add collision between player and platforms
     this.physics.add.collider(player, platforms);
 
+    this.physics.add.overlap(player, killFloor, death, null, this);
+
     // create keyboard detection for up/down/right/left arrow
     cursors = this.input.keyboard.createCursorKeys();
-
 };
 
 function update () {
@@ -129,9 +139,16 @@ function update () {
         player.setVelocityY(400);
     } else {
         player.setVelocityX(0);
-    }
+    };
 
     if (cursors.up.isDown && player.body.touching.down) {
         player.setVelocityY(-350);
-    }
+    };
+
 };
+
+function death (player, killFloor) {
+    this.registry.destroy();
+    this.events.off();
+    this.scene.restart();
+}
