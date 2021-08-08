@@ -74,7 +74,10 @@ The central goal is to create an interactive game with retro gaming themes and s
 
 * As a first time user I want to play a game with intuitive UX design
 * As a first time user I want to play a game thematically inspired by retro games. 
+* As a first time user I want a fun medieval style platform game. 
 * As a returning user I want to beat the game quicker than my last attempt.
+* As a user I want the option to select the gender of my character.
+* As a user I want a game with fun, unique audio. 
 
 # Structure
 
