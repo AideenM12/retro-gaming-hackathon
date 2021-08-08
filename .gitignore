@@ -1,11 +1,5 @@
-core.Microsoft*
-core.mongo*
-core.python*
-env.py
+venv/
 __pycache__/
-*.py[cod]
-node_modules/
-.github/
+env.py
 .vscode/
-/vscode
-.vscode.settings.json
+.theia/
