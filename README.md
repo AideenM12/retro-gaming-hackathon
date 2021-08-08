@@ -40,8 +40,6 @@ The live website can be viewed [here]()
 
 * [Charlie](https://github.com/charliehawley)
 
-* [Gemma](https://github.com/85GLC85)
-
 * [Craig](https://github.com/CraigThomasson)
 
 # UX
