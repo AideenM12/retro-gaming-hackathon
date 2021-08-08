@@ -162,6 +162,7 @@ nav {
 	color: #000814;
 	font-family: 'MedievalSharp', sans-serif;
 	font-weight: 600;
+	overflow: hidden !important;
 }
 
 #modal1 {
