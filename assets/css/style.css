@@ -9,6 +9,8 @@
 }
 
 body {
+	font-family: 'MedievalSharp', sans-serif;
+	min-height: 100vh;
     overflow: hidden;
 }
 
@@ -134,8 +136,8 @@ body {
 	min-height: 100vh;
 }
 
-.shadow {
-	text-shadow: #dab894 2px 2px;
+.shadow{
+    text-shadow: #dab894 2px 2px;
 }
 
 
@@ -299,6 +301,42 @@ nav ul a:hover {
 
 
 /*---------------------End of Main Menu CSS--------------------*/
+
+/*------------------------Game-Over CSS----------------------- */
+
+#show-me-your-body {
+	background-color: #c6e2e9;
+}
+
+#game-over-dec>h1 {
+	font-size: 7em;
+	text-shadow: #dab894 2px 2px;
+	text-align: center;
+	padding: 0px 0px 25px 0px
+}
+
+#game-over-main {
+	text-align: center;
+}
+
+#necromancer {
+	height: 4rem;
+  }
+  
+#necromancer:hover {
+	transform: scale(1.4);
+  }
+
+#necromancer-dialogue {
+	font-size: 2em;
+}
+  
+#high-brow-bell {
+	color: #000;
+	text-decoration: none;
+  }
+
+/*------------------End of Game-Over CSS----------------------*/
 
 /*----------------------Credits CSS --------------------------*/
 
