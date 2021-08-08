@@ -140,11 +140,6 @@ body {
     text-shadow: #dab894 2px 2px;
 }
 
-.shadow {
-	text-shadow: #dab894 2px 2px;
-}
-
-
 /*--Navigation--*/
 
 nav {
@@ -306,22 +301,28 @@ nav ul a:hover {
 
 /*---------------------End of Main Menu CSS--------------------*/
 
-/* Game Over */
+/*------------------------Game-Over CSS----------------------- */
 
 #game-over-body {
 	background-color: #c6e2e9;
 }
 
-#game-over-head {
-	font-size: 5em;
-	padding: 30px 0px;
-	margin: 20px auto;
+#show-me-your-body {
+	background-color: #c6e2e9;
+}
+
+#game-over-head>a {
+	font-size: 3em;
+}
+
+#game-over-dec {
+	font-size: 2em;
 	text-shadow: #dab894 2px 2px;
 	text-align: center;
   }
 
 #game-over-body {
-	
+	text-align: center;
 }
 
 #necromancer {
@@ -329,13 +330,16 @@ nav ul a:hover {
   }
   
 #necromancer:hover {
-	height: 5rem;
+	transform: scale(1.4);
   }
   
 #high-brow-bell {
 	color: #000;
 	text-decoration: none;
   }
+
+/*------------------End of Game-Over CSS----------------------*/
+
 /*----------------------Credits CSS --------------------------*/
 
 .credits {
