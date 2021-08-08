@@ -99,7 +99,12 @@ The main menu consists of a series of modals.
 
 <img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
- 
+#### 404 page
+
+This page exists to inform people that the page there looking for does not exist.
+Instead of using a generic 404 page we decided to ensure it stylings keep the themes of the main pages and inject some of the team’s personality in it. That said personality being cow puns apparently.
+The page holds links that take us back to main game and also to site’s socials. Ensuring a 404 error does not lead to a loss in traffic to the game. 
+
 
 ### Existing Features
 * The title header is located on the left of every page. Its function is to build and promote brand awareness whilst also creating a positive emotional response from the user by showcasing the color-scheme and typography specifically chosen for the brand.
