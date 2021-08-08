@@ -73,9 +73,9 @@ body {
 #moo-img {
     grid-area: moo-img;
     height: auto;
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
-    margin-top: 7%;
+    margin-top: 2%;
 }
 
 #moo-img img {
@@ -258,6 +258,21 @@ nav {
 	padding-left: 5px;
 	margin-top: 1rem;
 }
+
+/*Body elements*/
+
+#necromancer-start-dialogue {
+	font-size: 1.5em;
+}
+
+#cta {
+	padding-top: 1em;
+	font-size: 2em;
+}
+
+#necromancer-start {
+	height: 4rem;
+  }
 
 
 /*Footer and Icons--*/
