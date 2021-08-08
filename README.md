@@ -8,6 +8,7 @@
        * [Features](#Features) 
          * [Home Page](#Home-Page)
          * [Existing Features](#Existing-Features)
+         * [Out of Scope Features](#Out-of-Scope-Features)
         * [Design](#Design)
     * [Skeleton](#Skeleton)
       * [Wireframes](#Wireframes)
@@ -95,11 +96,8 @@ The main menu consists of a series of modals.
 
 <img src="assets/doc-images/modal2.png" width="450" height="250" alt="modal2">
 
-* The third modal is triggered when the user selects the "Start Game" button. This modal allows the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard.
 
-<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
-
-* The fourth modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
+* The third modal allows the user to select the gender of the character they would like to use. They are presented with two image buttons to choose from before beginning gameplay.
 
 <img src="assets/doc-images/modal4.png" width="450" height="250" alt="modal4">
 
@@ -123,7 +121,11 @@ The main menu consists of a series of modals.
 
 * The footer follows the same design as the header. The website title is located on the left and links to Facebook, Instagram and Github are stored in the icons to the right. Each of these links opens in a new tab so as to keep the user on the business page longer. 
 
+### Out of Scope Features
 
+* An original third modal was triggered when the user selects the "Start Game" button. This modal intended to allow the user to select their preferred mode of difficulty of gameplay. The user is presented with three options : Easy, Medium, Hard. This was deemed out of scope for this current project due to conflicts with the Phaser framework but will possibly be investigated at a later stage.
+
+<img src="assets/doc-images/modal3.png" width="450" height="250" alt="modal3">
 
 ### Design
 
