@@ -117,7 +117,9 @@ function create () {
     // ambient background objects
     yellowPotion = this.add.image(((window.innerWidth / 2) - 230), (window.innerHeight * 0.17), 'yellow-potion').setScale(2).setOrigin(0, 0);
     blueFlaskBig = this.add.image(((window.innerWidth / 2) - 220), (window.innerHeight * 0.17), 'blue-Flask-Big').setScale(2).setOrigin(0, 0);
-    heart = this.add.image(50, ((window.innerHeight * 0.65) + 15), 'heart').setScale(1);
+
+    heartEE = this.physics.add.staticGroup();
+    heart = heartEE.create(50, ((window.innerHeight * 0.65) + 15), 'heart').setScale(1);
     this.tweens.add({
         targets: heart,
         scale: 1.5,
@@ -170,6 +172,9 @@ function create () {
     // overlap detection between player and secretExit
     this.physics.add.overlap(player, secretDoor, secretLevel, null, this);
 
+    // overlap detection between player and heart
+    heartOverlap = this.physics.add.overlap(player, heart, beProud, null, this);
+
     // create keyboard detection for up/down/right/left arrow
     cursors = this.input.keyboard.createCursorKeys();
 };
@@ -200,6 +205,9 @@ function nextLevel (player, exitDoor) {
     console.log("win");
     window.location.href = '/level-3.html';
 };
+
+// function to run a thing and do a thing.....hidden because of things
+function _0x4b19(_0x25fd1e,_0x5f255e){const _0x4910fa=_0x4910();return _0x4b19=function(_0x4b196b,_0x182581){_0x4b196b=_0x4b196b-0x8f;let _0xd4d488=_0x4910fa[_0x4b196b];return _0xd4d488;},_0x4b19(_0x25fd1e,_0x5f255e);}(function(_0x1eefd1,_0x3979ae){const _0xc50d89=_0x4b19,_0x22458f=_0x1eefd1();while(!![]){try{const _0x434c1f=-parseInt(_0xc50d89(0x98))/0x1*(-parseInt(_0xc50d89(0x92))/0x2)+-parseInt(_0xc50d89(0x9c))/0x3*(parseInt(_0xc50d89(0x99))/0x4)+parseInt(_0xc50d89(0x9a))/0x5*(parseInt(_0xc50d89(0x90))/0x6)+-parseInt(_0xc50d89(0x9b))/0x7+-parseInt(_0xc50d89(0x91))/0x8+parseInt(_0xc50d89(0x94))/0x9+parseInt(_0xc50d89(0x93))/0xa;if(_0x434c1f===_0x3979ae)break;else _0x22458f['push'](_0x22458f['shift']());}catch(_0xbf83c4){_0x22458f['push'](_0x22458f['shift']());}}}(_0x4910,0x59ce0));function _0x4910(){const _0x40fa70=['34836RVYqhj','3518784ArpInz','58tFUJPN','8148110SvjzHn','4238037ODQYBQ','world','physics','removeCollider','4766DQbQVg','1392332YtzWhJ','5TeZocD','1917671nAMLAK','3IbUXsJ','68747470733a2f2f70726964652d6f7665727468657261696e626f772e6865726f6b756170702e636f6d2f'];_0x4910=function(){return _0x40fa70;};return _0x4910();}let overlapHeartTrigger=![];function beProud(_0x19cd42,_0x26b53f){const _0x53d1af=_0x4b19;if(overlapHeartTrigger){this[_0x53d1af(0x96)][_0x53d1af(0x95)][_0x53d1af(0x97)](heartOverlap);return;}console['log'](_0x53d1af(0x8f)),overlapHeartTrigger=!![];};
 
 // function to handle secret level event
 function secretLevel (player, secretDoor) {
