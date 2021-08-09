@@ -153,9 +153,6 @@ Instead of using a generic 404 page we decided to ensure it's stylings keep to t
 <img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
  
 
-### Existing Features
-
-
 
 
 ### Design
@@ -172,7 +169,7 @@ The color palette was chosen using the https://coolors.co website. This particul
 
 
 **Imagery**
- 
+ The imagery and graphics were chosen to recreate a medieval aesthetic in keeping with the goals from the user stories. Other imagery chosen was inspired by the game's uniquely original title. 
 
 ## Skeleton
 
@@ -186,7 +183,7 @@ The color palette was chosen using the https://coolors.co website. This particul
 
 
 ## Technologies Used
-- This project is built using HTML5 semantic markup and CSS stylesheets.
+- This project is built using HTML5 semantic markup, CSS stylesheets and Javascript.
 - [Gitpod](https://gitpod.io)
     - This project was built using Gitpod as the IDE.
 - [Google fonts](https://fonts.google.com/) 
@@ -197,6 +194,8 @@ The color palette was chosen using the https://coolors.co website. This particul
     - Buttons, images and popups were animated using Animate.css.
 - [Fontawesome](https://fontawesome.com/)
     - The icons used on this page were found in Fontawesome.
+- [Phaser.io](https://phaser.io/)
+    - Phaser.io was the core framework used to develop gameplay.
 - [Balsamiq](https://balsamiq.com/)
     - The wireframes for this project were created using Balsamiq.
 - [Unsplash](https://unsplash.com/)
@@ -207,6 +206,9 @@ The color palette was chosen using the https://coolors.co website. This particul
     - This was used to format each HTML page
 - [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) 
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
+- [Github](https://github.com/AideenM12/retro-gaming-hackathon)
+    - Github pages was used to to publish a live version of this game following deployment.
+    - Github was used to remotely store this game. 
 
 
 ## Testing
@@ -237,16 +239,24 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 7. Press Enter. A local clone will be created.  
 
 ## Credits
+
 * 404 cow img from https://pikwizard.com/photo/brown-and-white-cow/a23d59de9a85b648a35c5a97e689d139 
 
 ### Media
 
+* Custom audio was created by collaborator [Charlie](https://github.com/charliehawley)
 
 ### Code
 
+* All code used is an original creation of this site's collaborators.
 
 * [Stack Overflow](https://stackoverflow.com/) was used as a general resource for general issues and obstacles.  
 
 ### Acknowledgements
 
+* We would like to thank our esteemed facilitator [Kevin Ci](https://github.com/kevin-ci).
+
+* We also like to thank the fantastic Jim Community Ci for all his help and support during the course of this Hackathon.
+
+* We would also like to thank Atlas, hope the beach is good!
 

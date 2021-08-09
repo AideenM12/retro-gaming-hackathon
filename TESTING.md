@@ -6,11 +6,9 @@
         * [Navigation](#Navigation)
         * [Game Functions](#Game-Functions)
         * [Social Media Links](#Social-Media-Links)
-        * [Buttons and Solutions Functions](#Buttons-and-Solutions-Functions)
-        * [Alerts](#Alerts)
-        * [Score Counter](#Score-Counter)
+        * [Buttons and Modals](#Buttons-and-Modals)
         * [404 Page](#404-Page)
-   * [Site Responsiveness](#Site-Responsiveness)
+   * [Device Testing](#Device-Testing)
    * [User Testing](#User-Testing)
    * [Known Bugs and Issues](#Known-Bugs-and-Issues)
    * [Further Testing](#Further-Testing) 
@@ -184,25 +182,7 @@ Pass
 
 
 ## Validators
-* All Javascript code was passed through the [JShint](https://jshint.com/) validator with little to no issues with the exception of 'let', 'const' and template literals being available in ES6 and the '$' being recognised as an unused variable. Screenshots of the results of these files can be found below:
 
-    - [quiz.js validator results](documentation/doc-images/jShintquestions.png)
-
-    - [main.js validator results](documentation/doc-images/jShintMain.png)
-
-    - [email.js validator results](documentation/doc-images/emailJsjshint.png)
-
-* All HTML passed through the prescribed [W3C validator](https://validator.w3.org/) with no issues. Screenshots of the results of these files can be found below:
-
-    - [index.html validator results](documentation/doc-images/index-validator.w3.png)
-
-    - [contact.html validator results](documentation/doc-images/contact-validator.w3.png)
-
-    - [404.html validator results](documentation/doc-images/404-validator.w3.org.png)
-
-* All CSS passed through the prescribed [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) with no issues. A screenshot of the results can be found below:
-
-    - [CSS validator results](documentation/doc-images/jigsaw.w3.png)
 
 
 
@@ -210,79 +190,53 @@ Pass
 
  ### Navigation 
  
- <img src="documentation/doc-images/CPEatag.png" height="100" width="200">
 
-  <img src="documentation/doc-images/CPEhome.png" height="70" width="150">
-
-   * On the home page click the "Child's Play English" header on the top left corner to navigate to the home page.
-   * On the contact page click the "Child's Play English" header on the top left corner to navigate to the home page.
-   * On the 404 page click the "Child's Play English" header on the top left corner to navigate to the home page.
-   * Alternatively click "Home" on the top right corner to navigate to the home page on the home page, contact page and      404 page.
-   * On the home page, contact page and 404 page click "Contact/About" to navigate to the contact page. On mobile this can   be selected from the dropdown menu.
-   * Testing was done to ensure all Navigation features functioned as expected at the time of submission.
 
  ### Game functions
 
 
 
  ### Social Media links
+ * When the facebook icon is clicked, ensure that the user is brought to the facebook homepage in a new tab.
+ * When the instagram icon is clicked, ensure that the user is brought to the instagram homepage in a new tab.
+ * When the twitter icon is clicked, ensure that the user is brought to the twitter homepage in a new tab.
+ * Testing was done to ensure all Social media links functioned as expected and opened in new at the time of submission.
 
+  <img src="assets/doc-images/game-icons.png" width="200" height="100" alt="icons">
  
 
- ### Buttons and Solutions Functions
- * When the home button on the 404 page has been selected, ensure that the user is immediately brought back to the home page.
- * Testing was done to ensure all solution buttons functioned as expected and triggered the correct functions at the time of submission. 
- *  Testing was done to ensure the home button on the 404 page functioned as expected at the time of submission.
+ ### Buttons and Modals
+ * Ensure that all buttons and modals are functioning as expected and meet users expectations.
+ * Testing was done to ensure that all buttons and modals were functioning as desired and as a potential user would   expect. All buttons and modals functioned as desired at the time of submission. 
 
- ### Alerts
- * Testing was done to ensure the correct alert appeared after a user clicked a solutions and that all alerts functioned as expected at the time of submission.
 
- ### Score Counter
- * When a correct answer has been clicked, ensure that the numbers on the score counter move accordingly.
- * Testing was done to ensure the score counter moved accordingly during the quiz and fucntioned as expected at the time of submission.
 
  ### 404 Page
  * Ensure that there is a functioning 404 page that allows users to navigate back to the home page.
- * Testing was done to ensure that there was a functioning 404 page that allowed the user to easily navigate back to the home oage at the time of submission.
+ * Testing was done to ensure that there was a functioning 404 page that allowed the user to easily navigate back to the home page at the time of submission.
+
+ <img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
 
 
-## Site Responsiveness
+## Device Testing
 * The website was primarily tested on the following devices:
 
     - Hp Pavilion g series laptop
-    - Samsung A10
-
-* Other devices used for site testing include:
-
+    
     - HP 250 G6 Notebook PC 
-    - Huawei P smart 2020
-    - Iphone SE
-    - Samsung A70
-
-* Other tests performed to determine site responsiveness were conducted using google Dev Tools in order to view the site on a variety of devices. The [Am I Responsive](http://ami.responsivedesign.is/) website was also used to test the visual presentation of the site on different devices. 
+    
 
 
 ## User Testing
-* The site was also tested by members of the Slack community in the peer-code-review channel who pointed out that the desktop version had an unnecessary scroll feature to find the question buttons and also that the footer links did not open in a new tab. These issues have since been resolved. 
 
 
 
 ## Known Bugs and Issues
 
-* When the random quiz function was first implemented it did not handle repeat questions effectively at all. With some guidance from my classmate Kotaro Tanaka I was able to effectively tackle this issue with the following code.
-
-        - if (!usedQuestions.includes(randomQuestion)) { 
-		console.log(randomQuestion);
-		usedQuestions.push(randomQuestion); 
-	    } else {
-		randomQuiz();
-	    }
-
-This code was inserted into the randomQuiz function and, along with the usedQuestions array, effectively prevented questions repetition. However when this code was implemented it created a new issue. The food question array stopped calling the else if (questionCount == 12) statement of the checkSolutions function and displayed the questionCount numbers in the console on an infinite loop and stopped handling user interactions effectively. After using the debugger tool in google dev tools with the help of tutor support it was discovered that the askQuestion function that was being called inside the chooseObjectQuiz and chooseFoodQuiz functions and this was causing extra questions to be called and discarded before a question was displayed in the DOM. This caused the foodQuestions bank to be less than the required 12 questions needed to call the else if (questionCount == 12) statement of the checkSolutions function. The askQuestion function was removed from these two functions and the problem was resolved. 
 
 ## Further Testing
 
-* Testing was performed in the following browsers on both laptop and mobile devices:
+* Testing was performed in the following browsers on both laptop devices:
     - Google Chrome
 
     - Mozilla Firefox
