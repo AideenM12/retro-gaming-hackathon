@@ -22,6 +22,7 @@
       * [Media](#Media)
       * [Code](#Code)
       * [Acknowledgements](#Acknowledgements)
+      * [🥚](https://static.wikia.nocookie.net/crashban/images/b/b7/Nasty_nork.png/revision/latest?cb=20200206114939)
 
 
 # Retro Gaming Hackathon
@@ -109,6 +110,25 @@ Initially we wanted to create a platform style game that would test the players 
 
 ## Features
 
+#### Levels
+
+Each level in our game was developed using the Phaser.JS, which is an open sourced Canvas & WebGL Game Framework. As this was new to us,
+our use of Phaser was kept inline with the "Making your first Game" tutorials on https://phaser.io/learn. This tutorial was used to teach
+us how to position elements, attribute triggers to certain events, create collision detection, audio generation & more.
+
+Each level has it's own custom created background and audio track. We have a consistent tileset being used throughout the game,
+and where possible assets were reused and stitched together to create new assets.
+
+There is a direct flow to the game itself with a clear end.
+
+Score keeping & Beating the clock elements were ommitted to be sure that we had more content rather than additional game mechanics.
+
+On start game, the user is asked to select a Character. The Character selection asset href is held in localStorage and passed from the index.html
+file to the level-1.html file and persists in localStorage across all levels.
+
+🥚🍳🥚🍳 <--- 👀 also...
+
+
 #### Home Page.
 
 The home page gives a general overview of the content offered by the site. 
@@ -151,8 +171,6 @@ Instead of using a generic 404 page we decided to ensure it's stylings keep to t
 * The page holds links that take us back to main game. Ensuring a 404 error does not lead to a loss in traffic to the game. 
 
 <img src="assets/doc-images/404-page.PNG" width="450" height="250" alt="404 page">
- 
-
 
 
 ### Design
@@ -208,8 +226,13 @@ The color palette was chosen using the https://coolors.co website. This particul
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
 - [Github](https://github.com/AideenM12/retro-gaming-hackathon)
     - Github pages was used to to publish a live version of this game following deployment.
-    - Github was used to remotely store this game. 
-
+    - Github was used to remotely store this game.
+- [Krita](https://docs.krita.org/en/index.html)
+    - Tileset & background manipulation, as well as creating the spriteSheets for the characters
+- [Ableton](https://www.ableton.com/en/)
+    - Custom music by Charlie 🤜 Legend!
+- [Free Sounds](https://freesound.org/)
+    - To grab door creek for levels.
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)
@@ -245,6 +268,7 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 ### Media
 
 * Custom audio was created by collaborator [Charlie](https://github.com/charliehawley)
+* Custom backgrounds & spriteSheet stitching done by collaborator [Anthony](https://github.com/auxfuse)
 
 ### Code
 
