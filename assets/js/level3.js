@@ -28,17 +28,16 @@ function preload () {
     this.load.image('single-floor', 'assets/tileset/frames/environment/floor/floor_5.png');
     this.load.image('door', 'assets/tileset/frames/environment/door/doors_leaf_closed.png');
     this.load.image('exit-door', 'assets/tileset/frames/environment/door/doors_all.png');
-    this.load.image('crate', 'assets/tileset/frames/environment/objects/crate.png');
     this.load.image('skull', 'assets/tileset/frames/enemies/skull.png');
     this.load.image('blue-Flask-Big', 'assets/tileset/frames/environment/objects/flask_big_blue.png');
     this.load.image('column', 'assets/tileset/frames/environment/column/wall_column_mid.png');
     this.load.image('column-flipped', 'assets/tileset/frames/environment/column/wall_column_mid-flipped.png');
     this.load.image('column-red-banner', 'assets/tileset/frames/environment/wall/wall_banner_red.png');
     this.load.image('column-red-banner-flipped', 'assets/tileset/frames/environment/wall/wall_banner_red-flipped.png');
-    this.load.image('background', 'assets/tileset/frames/environment/wall/level-background.png')
+    this.load.image('background', 'assets/tileset/frames/environment/wall/level-background3.png')
 
     this.load.audio('door-close', 'assets/audio/door-creek-slam-egg.wav');
-    this.load.audio('dungeon-1', 'assets/audio/Dungeon-1.mp3')
+    this.load.audio('dungeon-3', 'assets/audio/Dungeon-3.mp3')
 
     this.load.spritesheet(
         'player',
@@ -54,7 +53,7 @@ function preload () {
 function create () {
     // level background & level audio
     levelBackground = this.add.image(0, 0, 'background').setScale(.3, .2).setOrigin(0, 0);
-    levelMusic = this.sound.add('dungeon-1', {
+    levelMusic = this.sound.add('dungeon-3', {
         volume: 0.2,
         loop: true
     });
@@ -62,15 +61,27 @@ function create () {
 
     // create level platforms
     platforms = this.physics.add.staticGroup();
-    floor = platforms.create(0, ((window.innerHeight * 1) - 48) ,'floor').setScale(3).setOrigin(0, 0).refreshBody();
-    floor2 = platforms.create((floor.width * 3.2), ((window.innerHeight * 0.7) - 48), 'floor').setScale(3).setOrigin(0, 0).refreshBody();
-    floor3 = platforms.create(((floor.width * 3) + (floor2.width * 4)), ((window.innerHeight * 0.8) - 48), 'floor').setScale(1.5, 3).setOrigin(0, 0).refreshBody();
-    floor4 = platforms.create(((floor.width * 3) + (floor3.width * 6)), (window.innerHeight * 0.5), 'floor').setScale(3).setOrigin(0, 0).refreshBody();
-    floor5 = platforms.create(((floor.width * 3.5) + (floor4.width)), (window.innerHeight * 0.2), 'floor').setScale(3).setOrigin(0, 0).refreshBody();
+    floor = platforms.create(0, (window.innerHeight * 0.65),'floor').setScale(2, 1).setOrigin(0, 0).refreshBody();
+    floor2 = platforms.create(500, (window.innerHeight * 0.75), 'single-floor').setScale(32, 1.5).setOrigin(0, 0).refreshBody();
+    floor3 = platforms.create(320, ((window.innerHeight * 0.30) + 25), 'single-floor').setScale(12, 1.5).setOrigin(0, 0).refreshBody();
+    floor4 = platforms.create(((window.innerWidth / 2) + 50), ((window.innerHeight * 0.30) + 25), 'floor').setScale(2, 1.5).setOrigin(0, 0).refreshBody();
+    floor5 = platforms.create(((window.innerWidth / 2) - 200), (window.innerHeight * 0.45), 'single-floor').setScale(12, 1.5).setOrigin(0, 0).refreshBody();
+    floor6 = platforms.create((window.innerWidth * 0.70), (window.innerHeight * 0.50), 'floor').setScale(3, 1.5).setOrigin(0, 0).refreshBody();
+    floor7 = platforms.create(((window.innerWidth * 0.70) - (floor6.width + 30)), (window.innerHeight * 0.65), 'single-floor').setScale(12, 1.5).setOrigin(0, 0).refreshBody();
+    exitFloor = platforms.create((window.innerWidth * 0.70), (window.innerHeight * 0.90), 'floor').setScale(3, 2).setOrigin(0, 0).refreshBody();
+    verticalColumn = platforms.create((0 + (floor.width * 2)), ((window.innerHeight * 0.30) + 25), 'single-floor').setScale(1, 20).setOrigin(0, 0).refreshBody();
+    verticalColumn2 = platforms.create(((window.innerWidth / 2) - 200), 0, 'single-floor').setScale(1, 30).setOrigin(0, 0).refreshBody();
+    verticalColumn3 = platforms.create(((window.innerWidth / 2) + 50), ((window.innerHeight * 0.25) + 15), 'single-floor').setScale(1, 30).setOrigin(0, 0).refreshBody();
+    verticalColumn4 = platforms.create(((window.innerWidth * 0.95) - 10), ((window.innerHeight * 0.35) + 70), 'single-floor').setScale(1, 30).setOrigin(0, 0).refreshBody();
+    verticalColumn5 = platforms.create(((window.innerWidth * 0.70) - 15), (window.innerHeight * 0.50), 'single-floor').setScale(1, 10).setOrigin(0, 0).refreshBody();
+
+    verticalColumn5 = platforms.create(((window.innerWidth * 0.55) - 15), (window.innerHeight * 0.80), 'single-floor').setScale(1, 5).setOrigin(0, 0).refreshBody();
+    verticalColumn6 = platforms.create(((window.innerWidth * 0.57) - 15), (window.innerHeight * 0.82), 'single-floor').setScale(1, 5).setOrigin(0, 0).refreshBody();
+    verticalColumn7 = platforms.create(((window.innerWidth * 0.62) - 15), (window.innerHeight * 0.85), 'single-floor').setScale(1, 5).setOrigin(0, 0).refreshBody();
 
     // kill floor
     kill = this.physics.add.staticGroup();
-    killFloor = kill.create((floor.width * 3), ((window.innerHeight * 1) - 48), 'acid-floor').setScale(4, 3).setOrigin(0, 0).refreshBody();
+    killFloor = kill.create(0, ((window.innerHeight * 1) - 48), 'acid-floor').setScale(5, 3).setOrigin(0, 0).refreshBody();
 
     // add small animation to kill floor
     this.tweens.add({
@@ -84,34 +95,22 @@ function create () {
     });
 
     // static scene objects doors/skulls/ladders etc
-    door = this.add.image(50, (window.innerHeight * 0.65), 'door').setScale(3).setOrigin(0, 0);
+    door = this.add.image(90, (window.innerHeight * 0.55), 'door').setScale(3).setOrigin(0, 0);
     doorCloseAudio = this.sound.play('door-close');
 
-    column1 = this.add.image(((window.innerWidth / 2) - 240), (window.innerHeight * 0.16), 'column').setScale(3).setOrigin(0, 0);
-    columnRedBanner = this.add.image(((window.innerWidth / 2) - 240), ((window.innerHeight * 0.10) + 10), 'column-red-banner').setScale(3).setOrigin(0, 0);
-    column2 = this.add.image(((window.innerWidth / 2) - 10), (window.innerHeight * 0.16), 'column-flipped').setScale(3).setOrigin(0, 0);
-    columnRedBanner2 = this.add.image(((window.innerWidth / 2) - 10), ((window.innerHeight * 0.10) + 10), 'column-red-banner-flipped').setScale(3).setOrigin(0, 0);
+    column1 = this.add.image(((window.innerWidth * 0.75) + 48), (window.innerHeight * 0.86), 'column').setScale(3).setOrigin(0, 0);
+    columnRedBanner = this.add.image(((window.innerWidth * 0.75) + 48), ((window.innerHeight * 0.81) + 10), 'column-red-banner').setScale(3).setOrigin(0, 0);
+    column2 = this.add.image(((window.innerWidth * 0.75) + 285), (window.innerHeight * 0.86), 'column-flipped').setScale(3).setOrigin(0, 0);
+    columnRedBanner2 = this.add.image(((window.innerWidth * 0.75) + 285), ((window.innerHeight * 0.81) + 10), 'column-red-banner-flipped').setScale(3).setOrigin(0, 0);
 
     // exit door
     exit = this.physics.add.staticGroup();
-    exitDoor = exit.create(((window.innerWidth / 2) - 200), (window.innerHeight * 0.10), 'exit-door').setScale(3).setOrigin(0, 0).refreshBody();
-    
-    singleFloorTile = this.add.image(50, (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
-    singleFloorTile2 = this.add.image((50 + (singleFloorTile.width * 4)), (window.innerHeight * 0.75), 'single-floor').setScale(2, 1).setOrigin(0, 0);
-
-    // using crate image as pseudo-ladder image
-    ladder = this.add.image((62 + (door.width / 2)), (door.height + (window.innerHeight * 0.71)), 'crate').setScale(2.5, 2).setOrigin(0, 0);
-    ladder2 = this.add.image((62 + (door.width / 2)), (door.height + (window.innerHeight * 0.75)), 'crate').setScale(2.5, 2).setOrigin(0, 0);
-    ladder3 = this.add.image((62 + (door.width / 2)), (door.height + (window.innerHeight * 0.79)), 'crate').setScale(2.5, 2).setOrigin(0, 0);
-    ladder4 = this.add.image((62 + (door.width / 2)), (door.height + (window.innerHeight * 0.83)), 'crate').setScale(2.5, 2).setOrigin(0, 0);
-    ladder5 = this.add.image((62 + (door.width / 2)), (door.height + (window.innerHeight * 0.87)), 'crate').setScale(2.5, 2).setOrigin(0, 0);
+    exitDoor = exit.create((window.innerWidth * 0.80), (window.innerHeight * 0.80), 'exit-door').setScale(3).setOrigin(0, 0).refreshBody();
 
     // ambient background objects
-    blueFlaskBig = this.add.image(40, (window.innerHeight * 0.92), 'blue-Flask-Big').setScale(2).setOrigin(0, 0);
-    skull = this.add.image(40, (window.innerHeight * 0.9), 'skull').setScale(4).setOrigin(0, 0);
 
     // character
-    player = this.physics.add.sprite((60 + (door.width / 2)), (window.innerHeight * 0.7), 'player');
+    player = this.physics.add.sprite((90 + (door.width * 0.8)), (window.innerHeight * 0.55), 'player');
     player.setOrigin(0, 0);
     player.setScale(3);
     player.setBounce(0.2);
@@ -177,7 +176,7 @@ function update () {
 // function to handle level win mechanic
 function nextLevel (player, exitDoor) {
     console.log("win");
-    window.location.href = '/level-2.html';
+    window.location.href = '/credits.html';
 };
 
 // function to handle level death mechanic

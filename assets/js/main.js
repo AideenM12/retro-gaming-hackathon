@@ -35,3 +35,8 @@ maleSprite.addEventListener("click", () => {
     localStorage.setItem("playerSprite", playerSprite);
     window.location.href = '/level-1.html';
 });
+
+if (window.location.pathname == "/game-over.html") {
+    let rickRoll = localStorage.getItem("Rick Rolled");
+    console.log(rickRoll);
+};
