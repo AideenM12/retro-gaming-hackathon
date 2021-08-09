@@ -34,7 +34,7 @@ function preload () {
     this.load.image('column-flipped', 'assets/tileset/frames/environment/column/wall_column_mid-flipped.png');
     this.load.image('column-red-banner', 'assets/tileset/frames/environment/wall/wall_banner_red.png');
     this.load.image('column-red-banner-flipped', 'assets/tileset/frames/environment/wall/wall_banner_red-flipped.png');
-    this.load.image('background', 'assets/tileset/frames/environment/wall/level-background2.png')
+    this.load.image('background', 'assets/tileset/frames/environment/wall/level-background3.png')
 
     this.load.audio('door-close', 'assets/audio/door-creek-slam-egg.wav');
     this.load.audio('dungeon-2', 'assets/audio/Dungeon-2.mp3')
