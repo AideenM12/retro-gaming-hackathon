@@ -2,8 +2,18 @@ $(document).ready(function(){
   
     $('.modal').modal();
     $('#modal1').modal();
-    
+    $(".credits").ready(function() {
+        $("html, body").animate({
+                scrollTop: innerHeight,
+            },
+             {
+                duration: 10000,
+                easing: "linear"
+             });
+        return false;
+    });
 });
+
 
 let playerSprite;
 
