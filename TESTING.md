@@ -3,7 +3,6 @@
    * [Testing User Stories](#Testing-User-Stories)
    * [Validators](#Validators)
    * [Testing Features](#Testing-Features)
-        * [Navigation](#Navigation)
         * [Game Functions](#Game-Functions)
         * [Social Media Links](#Social-Media-Links)
         * [Buttons and Modals](#Buttons-and-Modals)
@@ -183,14 +182,53 @@ Pass
 
 ## Validators
 
+### HTML 
+All of the following HTML pages were validated by using [W3C Markup Validation Service](https://validator.w3.org/).
+
+— **HTML Pages** —
+* **Index Page** &#40; `index.html` &#41;:
+
+<img src="assets/doc-images/retroindex-validator.png" width="550" height="350" alt="index-validator">
+
+
+* **Game Over Page** &#40; `game-over.html` &#41;:
+
+<img src="assets/doc-images/retro-gameover-validator.png" width="550" height="350" alt="game-over-validator">
+
+
+* **Credits Page** &#40; `credits.html` &#41;:
+
+<img src="assets/doc-images/retrocreditsvalidator.png" width="550" height="350" alt="credits-validator">
+
+* **404 Page** &#40; `404.html` &#41;:
+
+<img src="assets/doc-images/retro404validator.png" width="550" height="350" alt="404-validator">
+
+* **Level 1 Page** &#40; `level-1.html` &#41;:
+
+<img src="assets/doc-images/level-1-validator.png" width="550" height="350" alt="level-1-validator">
+
+* **Level 4 Page** &#40; `level-4.html` &#41;:
+
+<img src="assets/doc-images/level-4-validator.png" width="550" height="350" alt="level-4-validator">
+
+
+### CSS
+All CSS was validated by using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) with no issues detected. A screenshot of these results can be seen below:
+
+<img src="assets/doc-images/retro-css.png" width="550" height="350" alt="CSS-validator">
+
+### Javascript
+* All Javascript code was passed through the [JShint](https://jshint.com/) validator with little to no issues with the exception of 'let' being available in ES6 and the '$' being recognised as an unused variable. Screenshots of the results of these files can be found below:
+
+* **main.js file**
+
+<img src="assets/doc-images/retro-jshint.png" width="450" height="350" alt="main.js-JShint-validator">
+
 
 
 
 ## Testing Features
-
- ### Navigation 
- 
-
 
  ### Game functions
 
@@ -229,10 +267,9 @@ Pass
 
 ## User Testing
 
-
-
 ## Known Bugs and Issues
 
+* No bugs were detected at the time of submission.
 
 ## Further Testing
 
@@ -246,14 +283,3 @@ Pass
     - Microsoft Edge
 
     No issues were detected in any of these browsers at the time of submission.
-
-
-    The below image is an example result of lighthouse testing performed on the index page for desktop with every other test achieving similar results. The lighthouse tool found in Google Dev Tools was used repeatedly throughout the building of the project and was essential in discovering and resolving the issues described below. A lighthouse test was performed on both mobile and desktop for each individual page on the site with links to the full reports of each of these tests found below. The lighthouse tool tested each of the following criteria: performance, accessibility, best practices and SEO of each individual page in both mobile and desktop. Each test resulted in a score of 90 or above for desktop criteria and 70 or above for mobile criteria.
-
-    <img src="documentation/doc-images/lighthouseMS2.jpg" width="600" height="250">
-
-    [Lighthouse Desktop Index page results](documentation/doc-images/indexlightMS2desktop.pdf) |
-    [Lighthouse Mobile Index page results](documentation/doc-images/indexMS2lightmobile.pdf)
-
-    [Lighthouse Desktop Contact page results](ddocumentation/doc-images/contactlightMS2desktop.pdf) | 
-    [Lighthouse Mobile Contact page results](documentation/doc-images/contactlightMS2mobile.pdf) 
