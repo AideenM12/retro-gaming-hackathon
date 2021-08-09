@@ -2,7 +2,9 @@ $(document).ready(function(){
   
     $('.modal').modal();
     $('#modal1').modal();
+    
     $(".credits").ready(function() {
+        if($('body.credits').length) {
         $("html, body").animate({
                 scrollTop: innerHeight,
             },
@@ -11,8 +13,11 @@ $(document).ready(function(){
                 easing: "linear"
              });
         return false;
-    });
+     } });
+
+   
 });
+
 
 
 let playerSprite;
