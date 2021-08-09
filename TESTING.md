@@ -23,7 +23,7 @@ Verify that the game's UX is intuitive.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. A modal will appear offering the user the choice to read gameplay instructions or begin the game.
 4. If the user selects the "How to Play" button a modal with a list of game play instructions appears and also a button to start the game.
 5. Once the user has selected the start game button a modal will appear to ask the user to select the gender of their character. 
@@ -58,7 +58,7 @@ Verify that the game is inspired by retro games.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. A modal will appear offering the user the choice to read gameplay instructions or begin the game.
 4. Observe the retro style graphics and game play that have been implemented to fulfill this task. 
 5. Observe the custom audio that has been implemented to further enhance the retro feel of the game. 
@@ -83,7 +83,7 @@ Verify that the game is a platform game with a medieval style and aesthetic.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. Begin gameplay.
 4. Observe the medieval dungeon setting coupled with the medieval wizard characters. 
 5. Observe the platform format in which the game has been presented.
@@ -112,7 +112,7 @@ Verify that the user has the option of replaying the game.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. Begin gameplay.
 4. Continuing playing the game for as long as desired
 
@@ -137,7 +137,7 @@ Verify that the user has the option of selecting the gender of their character.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. Click the 'Start Game' button
 4. Choose the gender of your character in the pop up modal.
 
@@ -165,7 +165,7 @@ Verify that the game has it's own custom unique audio.
 
 **Steps**
 1. Open one's internet browser of choice.
-2. Navigate to [https://motherfolklore.herokuapp.com/](https://motherfolklore.herokuapp.com/)
+2. Navigate to [https://aideenm12.github.io/retro-gaming-hackathon/](https://aideenm12.github.io/retro-gaming-hackathon/)
 3. Begin gameplay.
 4. Observe the custom audio designed to complement this game thematically.
 
