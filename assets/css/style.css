@@ -11,7 +11,6 @@
 body {
 	font-family: 'MedievalSharp', sans-serif;
 	min-height: 100vh;
-    /*overflow: hidden;*/
 }
 
 /* 404 page */
@@ -164,7 +163,11 @@ nav {
 	color: #000814;
 	font-family: 'MedievalSharp', sans-serif;
 	font-weight: 600;
-	/*overflow: hidden !important;*/
+	
+}
+#main-menu{
+	display: flex;
+	flex-direction: column;
 }
 /*I got a fever*/
 #modal1 {
@@ -296,15 +299,10 @@ video {
 
 /*Footer and Icons--*/
 
-footer {
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	padding: 0 !important;
+footer{
+	flex-shrink: 0;
 	background-color: #dab894 !important;
 	text-align: left;
-	max-height: 60px;
 	font-size: 1.5rem;
 }
 
