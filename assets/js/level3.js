@@ -175,7 +175,8 @@ function update () {
 
 // function to handle level win mechanic
 function nextLevel (player, exitDoor) {
-    console.log("win")
+    console.log("win");
+    window.location.href = '/credits.html';
 };
 
 // function to handle level death mechanic
