@@ -103,6 +103,9 @@ function create () {
     column2 = this.add.image(280, (window.innerHeight * 0.61), 'column-flipped').setScale(3).setOrigin(0, 0);
     columnRedBanner2 = this.add.image(280, ((window.innerHeight * 0.57) + 10), 'column-red-banner-flipped').setScale(3).setOrigin(0, 0);
 
+    verticalColumn5 = platforms.create(280, ((window.innerHeight * 0.50) - 40), 'single-floor').setScale(1.5, 12).setOrigin(0, 0).refreshBody();
+    floor5 = platforms.create(175, ((window.innerHeight * 0.50) - 40), 'single-floor').setScale(8, 1).setOrigin(0, 0).refreshBody();
+
     // exit door
     exit = this.physics.add.staticGroup();
     exitDoor = exit.create(90, (window.innerHeight * 0.55), 'exit-door').setScale(3).setOrigin(0, 0).refreshBody();
@@ -195,11 +198,13 @@ function update () {
 // function to handle level win mechanic
 function nextLevel (player, exitDoor) {
     console.log("win");
+    window.location.href = '/level-3.html';
 };
 
 // function to handle secret level event
 function secretLevel (player, secretDoor) {
     console.log("secret level");
+    window.location.href = '/level-4.html';
 }
 
 // function to handle level death mechanic
